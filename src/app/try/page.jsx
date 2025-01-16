@@ -1,0 +1,61 @@
+import React from 'react';
+
+function CustomShape({ startColor, endColor, className = '', style = {} }) {
+  return (
+    <svg 
+      viewBox="0 0 117 150" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={style}
+    >
+      <path 
+        d="M116.5 104.577C116.5 118.981 114.561 128.861 111.194 135.592C107.839 142.298 103.056 145.904 97.2759 147.753C91.4664 149.612 84.6332 149.702 77.1836 149.315C74.7168 149.186 72.1797 149.005 69.5943 148.82C64.4071 148.45 59.0252 148.065 53.625 148.065C48.0104 148.065 42.7111 148.481 37.8207 148.864C35.6601 149.033 33.5792 149.196 31.5863 149.315C25.0464 149.703 19.454 149.609 14.8838 147.766C10.354 145.939 6.76873 142.367 4.30497 135.644C1.83208 128.895 0.5 118.996 0.5 104.577C0.5 75.7677 7.03322 49.7109 17.5706 30.8739C28.1171 12.0206 42.6079 0.5 58.5 0.5C74.3921 0.5 88.8829 12.0206 99.4294 30.8739C109.967 49.7109 116.5 75.7677 116.5 104.577Z" 
+        stroke="black"
+      />
+      <path 
+        d="M111.485 102.605C111.485 115.886 109.697 124.965 106.613 131.132C103.547 137.265 99.1834 140.553 93.907 142.242C88.5895 143.944 82.3211 144.031 75.4504 143.673C73.1835 143.554 70.8475 143.388 68.4644 143.217C63.6732 142.875 58.6919 142.519 53.7014 142.519C48.5116 142.519 43.6062 142.904 39.09 143.258C37.0991 143.414 35.1838 143.564 33.353 143.673C27.3197 144.031 22.2062 143.939 18.0417 142.259C13.9331 140.602 10.6659 137.361 8.41074 131.204C6.14298 125.012 4.91398 115.907 4.91398 102.605C4.91398 76.0444 10.9353 52.032 20.6355 34.6843C30.3482 17.314 43.6569 6.76456 58.1994 6.76456C72.7419 6.76456 86.0507 17.314 95.7634 34.6843C105.464 52.032 111.485 76.0444 111.485 102.605Z" 
+        fill={`url(#gradient-${startColor}-${endColor})`}
+        stroke="black" 
+        strokeWidth="1.38264"
+      />
+      <defs>
+        <linearGradient 
+          id={`gradient-${startColor}-${endColor}`}
+          x1="18.2058" 
+          y1="12.5133" 
+          x2="149.616" 
+          y2="71.936" 
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor={startColor} />
+          <stop offset="1" stopColor={endColor} />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}
+
+export default function CustomShapes() {
+  const shapes = [
+    { startColor: '#FF6B6B', endColor: '#4ECDC4', className: 'w-32 h-40 absolute top-10 left-10 rotate-12' },
+    { startColor: '#FFD93D', endColor: '#6E44FF', className: 'w-40 h-48 absolute top-20 right-20 -rotate-6' },
+    { startColor: '#FF8C00', endColor: '#FF2E63', className: 'w-36 h-44 absolute bottom-10 left-1/4 rotate-45' },
+    { startColor: '#4CAF50', endColor: '#2196F3', className: 'w-28 h-36 absolute top-1/3 right-1/3 -rotate-12' },
+    { startColor: '#9C27B0', endColor: '#FF9800', className: 'w-44 h-52 absolute bottom-20 right-10 rotate-180' },
+  ];
+
+  return (
+    <div className="relative w-full h-screen overflow-hidden">
+      {shapes.map((shape, index) => (
+        <CustomShape
+          key={index}
+          startColor={shape.startColor}
+          endColor={shape.endColor}
+          className={`${shape.className} transition-all duration-500 ease-in-out hover:scale-110`}
+        />
+      ))}
+    </div>
+  );
+}
+
