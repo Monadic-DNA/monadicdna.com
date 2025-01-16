@@ -1,191 +1,257 @@
 import Link from "next/link";
-import { Twitter, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-[#0D0C0C] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="space-y-4 flex md:flex-row flex-col md:justify-between justify-start items-start gap-8">
-          {/* Logo and Social Icons */}
-          <div className="md:col-span-6">
-            <svg
-              className="h-7 mb-8 text-white w-auto"
-              viewBox="0 0 202 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+        {/* Mobile Layout */}
+        <div className="md:hidden space-y-8">
+          <h2 className="text-2xl font-bold">Monadic DNA</h2>
+          <div className="flex flex-col space-y-4">
+            <Link href="#" className="text-white hover:text-gray-300">
+              About
+            </Link>
+            <Link href="#" className="text-white hover:text-gray-300">
+              Team
+            </Link>
+            <Link href="#" className="text-white hover:text-gray-300">
+              For developers
+            </Link>
+            <Link href="#" className="text-white hover:text-gray-300">
+              Security
+            </Link>
+            <Link href="#" className="text-white hover:text-gray-300">
+              Press
+            </Link>
+            <Link href="#" className="text-white hover:text-gray-300">
+              Terms of Service
+            </Link>
+            <Link href="#" className="text-white hover:text-gray-300">
+              Privacy Policy
+            </Link>
+          </div>
+          <div className="flex gap-4">
+            <Link
+              href="#"
+              className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
             >
-              <path
-                d="M0.112 23V0.599998H7.952L11.824 20.12H12.4L16.272 0.599998H24.112V23H20.016V3.704H19.44L15.6 23H8.624L4.784 3.704H4.208V23H0.112ZM36.0108 23.448C34.4321 23.448 33.0134 23.128 31.7548 22.488C30.4961 21.848 29.5041 20.92 28.7788 19.704C28.0534 18.488 27.6908 17.0267 27.6908 15.32V14.808C27.6908 13.1013 28.0534 11.64 28.7788 10.424C29.5041 9.208 30.4961 8.28 31.7548 7.64C33.0134 7 34.4321 6.68 36.0108 6.68C37.5894 6.68 39.0081 7 40.2668 7.64C41.5254 8.28 42.5174 9.208 43.2428 10.424C43.9681 11.64 44.3308 13.1013 44.3308 14.808V15.32C44.3308 17.0267 43.9681 18.488 43.2428 19.704C42.5174 20.92 41.5254 21.848 40.2668 22.488C39.0081 23.128 37.5894 23.448 36.0108 23.448ZM36.0108 19.864C37.2481 19.864 38.2721 19.4693 39.0828 18.68C39.8934 17.8693 40.2988 16.7173 40.2988 15.224V14.904C40.2988 13.4107 39.8934 12.2693 39.0828 11.48C38.2934 10.6693 37.2694 10.264 36.0108 10.264C34.7734 10.264 33.7494 10.6693 32.9388 11.48C32.1281 12.2693 31.7228 13.4107 31.7228 14.904V15.224C31.7228 16.7173 32.1281 17.8693 32.9388 18.68C33.7494 19.4693 34.7734 19.864 36.0108 19.864ZM48.0525 23V7.128H52.0205V9.208H52.5965C52.8525 8.65333 53.3325 8.13067 54.0365 7.64C54.7405 7.128 55.8072 6.872 57.2365 6.872C58.4738 6.872 59.5512 7.16 60.4685 7.736C61.4072 8.29067 62.1325 9.06933 62.6445 10.072C63.1565 11.0533 63.4125 12.2053 63.4125 13.528V23H59.3805V13.848C59.3805 12.6533 59.0818 11.7573 58.4845 11.16C57.9085 10.5627 57.0765 10.264 55.9885 10.264C54.7512 10.264 53.7912 10.68 53.1085 11.512C52.4258 12.3227 52.0845 13.464 52.0845 14.936V23H48.0525ZM72.6993 23.448C71.5686 23.448 70.5553 23.256 69.6593 22.872C68.7633 22.4667 68.0486 21.8907 67.5153 21.144C67.0033 20.376 66.7473 19.448 66.7473 18.36C66.7473 17.272 67.0033 16.3653 67.5153 15.64C68.0486 14.8933 68.7739 14.3387 69.6913 13.976C70.6299 13.592 71.6966 13.4 72.8913 13.4H77.2433V12.504C77.2433 11.7573 77.0086 11.1493 76.5393 10.68C76.0699 10.1893 75.3233 9.944 74.2993 9.944C73.2966 9.944 72.5499 10.1787 72.0593 10.648C71.5686 11.096 71.2486 11.6827 71.0993 12.408L67.3873 11.16C67.6433 10.3493 68.0486 9.61333 68.6033 8.952C69.1793 8.26933 69.9366 7.72533 70.8753 7.32C71.8353 6.89333 72.9979 6.68 74.3633 6.68C76.4539 6.68 78.1073 7.20267 79.3233 8.248C80.5393 9.29333 81.1473 10.808 81.1473 12.792V18.712C81.1473 19.352 81.4459 19.672 82.0433 19.672H83.3233V23H80.6353C79.8459 23 79.1953 22.808 78.6833 22.424C78.1713 22.04 77.9153 21.528 77.9153 20.888V20.856H77.3073C77.2219 21.112 77.0299 21.4533 76.7313 21.88C76.4326 22.2853 75.9633 22.648 75.3233 22.968C74.6833 23.288 73.8086 23.448 72.6993 23.448ZM73.4033 20.184C74.5339 20.184 75.4513 19.8747 76.1553 19.256C76.8806 18.616 77.2433 17.7733 77.2433 16.728V16.408H73.1793C72.4326 16.408 71.8459 16.568 71.4193 16.888C70.9926 17.208 70.7793 17.656 70.7793 18.232C70.7793 18.808 71.0033 19.2773 71.4513 19.64C71.8993 20.0027 72.5499 20.184 73.4033 20.184ZM92.3588 23.448C91.1001 23.448 89.9161 23.1387 88.8068 22.52C87.7188 21.88 86.8441 20.952 86.1828 19.736C85.5214 18.52 85.1908 17.048 85.1908 15.32V14.808C85.1908 13.08 85.5214 11.608 86.1828 10.392C86.8441 9.176 87.7188 8.25867 88.8068 7.64C89.8948 7 91.0788 6.68 92.3588 6.68C93.3188 6.68 94.1188 6.79733 94.7588 7.032C95.4201 7.24533 95.9534 7.52267 96.3588 7.864C96.7641 8.20533 97.0734 8.568 97.2868 8.952H97.8628V0.599998H101.895V23H97.9268V21.08H97.3508C96.9881 21.6773 96.4228 22.2213 95.6548 22.712C94.9081 23.2027 93.8094 23.448 92.3588 23.448ZM93.5748 19.928C94.8121 19.928 95.8468 19.5333 96.6788 18.744C97.5108 17.9333 97.9268 16.76 97.9268 15.224V14.904C97.9268 13.368 97.5108 12.2053 96.6788 11.416C95.8681 10.6053 94.8334 10.2 93.5748 10.2C92.3374 10.2 91.3028 10.6053 90.4708 11.416C89.6388 12.2053 89.2228 13.368 89.2228 14.904V15.224C89.2228 16.76 89.6388 17.9333 90.4708 18.744C91.3028 19.5333 92.3374 19.928 93.5748 19.928ZM106.365 23V7.128H110.397V23H106.365ZM108.381 5.272C107.656 5.272 107.037 5.03733 106.525 4.568C106.034 4.09867 105.789 3.48 105.789 2.712C105.789 1.944 106.034 1.32533 106.525 0.855999C107.037 0.386665 107.656 0.151999 108.381 0.151999C109.128 0.151999 109.746 0.386665 110.237 0.855999C110.728 1.32533 110.973 1.944 110.973 2.712C110.973 3.48 110.728 4.09867 110.237 4.568C109.746 5.03733 109.128 5.272 108.381 5.272ZM122.321 23.448C120.785 23.448 119.388 23.128 118.129 22.488C116.892 21.848 115.91 20.92 115.185 19.704C114.46 18.488 114.097 17.016 114.097 15.288V14.84C114.097 13.112 114.46 11.64 115.185 10.424C115.91 9.208 116.892 8.28 118.129 7.64C119.388 7 120.785 6.68 122.321 6.68C123.836 6.68 125.137 6.94667 126.225 7.48C127.313 8.01333 128.188 8.74933 128.849 9.688C129.532 10.6053 129.98 11.6507 130.193 12.824L126.289 13.656C126.204 13.016 126.012 12.44 125.713 11.928C125.414 11.416 124.988 11.0107 124.433 10.712C123.9 10.4133 123.228 10.264 122.417 10.264C121.606 10.264 120.87 10.4453 120.209 10.808C119.569 11.1493 119.057 11.672 118.673 12.376C118.31 13.0587 118.129 13.9013 118.129 14.904V15.224C118.129 16.2267 118.31 17.08 118.673 17.784C119.057 18.4667 119.569 18.9893 120.209 19.352C120.87 19.6933 121.606 19.864 122.417 19.864C123.633 19.864 124.55 19.5547 125.169 18.936C125.809 18.296 126.214 17.464 126.385 16.44L130.289 17.368C130.012 18.4987 129.532 19.5333 128.849 20.472C128.188 21.3893 127.313 22.1147 126.225 22.648C125.137 23.1813 123.836 23.448 122.321 23.448ZM140.972 23V19.288H143.916V4.312H140.972V0.599998H150.188C153.196 0.599998 155.479 1.368 157.036 2.904C158.615 4.41867 159.404 6.68 159.404 9.688V13.912C159.404 16.92 158.615 19.192 157.036 20.728C155.479 22.2427 153.196 23 150.188 23H140.972ZM148.14 19.16H150.252C151.959 19.16 153.207 18.712 153.996 17.816C154.785 16.92 155.18 15.6613 155.18 14.04V9.56C155.18 7.91733 154.785 6.65867 153.996 5.784C153.207 4.888 151.959 4.44 150.252 4.44H148.14V19.16ZM162.924 23V0.599998H170.957L175.405 20.12H175.981V0.599998H180.141V23H172.109L167.661 3.48H167.085V23H162.924ZM182.826 23L188.714 0.599998H196.074L201.962 23H197.61L196.394 18.072H188.394L187.178 23H182.826ZM189.386 14.168H195.402L192.682 3.256H192.106L189.386 14.168Z"
-                fill="white"
-              />
-            </svg>
-            <div className="flex gap-4">
-              <Link
-                href="#"
-                className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+              <svg
+                className="w-5 h-5"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="w-5 h-5"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="25" height="25" />
-                  <path
-                    d="M14.5219 10.825L22.4328 1.5625H20.5578L13.6906 9.60469L8.20313 1.5625H1.875L10.1719 13.725L1.875 23.4375H3.75L11.0031 14.9438L16.7984 23.4375H23.1266L14.5219 10.825ZM11.9547 13.8313L11.1141 12.6203L4.425 2.98438H7.30469L12.7016 10.7609L13.5422 11.9719L20.5594 22.0812H17.6797L11.9547 13.8313Z"
-                    fill="black"
-                  />
-                </svg>
+                <rect width="25" height="25" />
+                <path
+                  d="M14.5219 10.825L22.4328 1.5625H20.5578L13.6906 9.60469L8.20313 1.5625H1.875L10.1719 13.725L1.875 23.4375H3.75L11.0031 14.9438L16.7984 23.4375H23.1266L14.5219 10.825ZM11.9547 13.8313L11.1141 12.6203L4.425 2.98438H7.30469L12.7016 10.7609L13.5422 11.9719L20.5594 22.0812H17.6797L11.9547 13.8313Z"
+                  fill="black"
+                />
+              </svg>
+              <span className="sr-only">X</span>
+            </Link>
 
-                <span className="sr-only">X</span>
-              </Link>
-
-              <Link
-                href="#"
-                className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+            <Link
+              href="#"
+              className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+            >
+              <svg
+                className="w-5 h-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="w-5 h-5"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="24" height="24" />
-                  <path
-                    d="M12 11.3879C11.094 9.62686 8.628 6.34386 6.335 4.72586C4.138 3.17586 3.301 3.44286 2.752 3.69286C2.116 3.97786 2 4.95486 2 5.52786C2 6.10286 2.315 10.2369 2.52 10.9279C3.2 13.2079 5.614 13.9779 7.84 13.7309C4.58 14.2139 1.683 15.4009 5.48 19.6289C9.658 23.9539 11.206 18.7019 12 16.0389C12.794 18.7019 13.708 23.7649 18.444 19.6289C22 16.0389 19.421 14.2139 16.161 13.7309C18.386 13.9779 20.801 13.2079 21.48 10.9279C21.685 10.2379 22 6.10286 22 5.52886C22 4.95386 21.884 3.97886 21.248 3.69086C20.699 3.44286 19.862 3.17386 17.665 4.72386C15.372 6.34486 12.905 9.62786 12 11.3879Z"
-                    fill="black"
-                  />
-                </svg>
+                <rect width="24" height="24" />
+                <path
+                  d="M12 11.3879C11.094 9.62686 8.628 6.34386 6.335 4.72586C4.138 3.17586 3.301 3.44286 2.752 3.69286C2.116 3.97786 2 4.95486 2 5.52786C2 6.10286 2.315 10.2369 2.52 10.9279C3.2 13.2079 5.614 13.9779 7.84 13.7309C4.58 14.2139 1.683 15.4009 5.48 19.6289C9.658 23.9539 11.206 18.7019 12 16.0389C12.794 18.7019 13.708 23.7649 18.444 19.6289C22 16.0389 19.421 14.2139 16.161 13.7309C18.386 13.9779 20.801 13.2079 21.48 10.9279C21.685 10.2379 22 6.10286 22 5.52886C22 4.95386 21.884 3.97886 21.248 3.69086C20.699 3.44286 19.862 3.17386 17.665 4.72386C15.372 6.34486 12.905 9.62786 12 11.3879Z"
+                  fill="black"
+                />
+              </svg>
+              <span className="sr-only">Butterfly</span>
+            </Link>
 
-                <span className="sr-only">Butterfly</span>
-              </Link>
-
-              <Link
-                href="#"
-                className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+            <Link
+              href="#"
+              className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+            >
+              <svg
+                className="w-5 h-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="w-5 h-5"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="24" height="24" />
-                  <path
-                    d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L4 8V18H20V8L12 13ZM12 11L20 6H4L12 11ZM4 8V6V18V8Z"
-                    fill="black"
-                  />
-                </svg>
+                <rect width="24" height="24" />
+                <path
+                  d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L4 8V18H20V8L12 13ZM12 11L20 6H4L12 11ZM4 8V6V18V8Z"
+                  fill="black"
+                />
+              </svg>
+              <span className="sr-only">Mail</span>
+            </Link>
 
-                <span className="sr-only">Mail</span>
-              </Link>
-
-              <Link
-                href="#"
-                className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+            <Link
+              href="#"
+              className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+            >
+              <svg
+                className="h-5 w-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  className="h-5 w-5"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="24" height="24" />
-                  <path
-                    d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
-                    fill="black"
-                  />
-                </svg>
+                <rect width="24" height="24" />
+                <path
+                  d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                  fill="black"
+                />
+              </svg>
+              <span className="sr-only">Linkedin</span>
+            </Link>
+          </div>
+          <p className="text-base">©2024 Monadic Health</p>
+        </div>
 
-                <span className="sr-only">Linkedin</span>
-              </Link>
+        {/* Desktop Layout */}
+        <div className="hidden md:block">
+          <div className="flex justify-between items-start">
+            {/* Left Section */}
+            <div className="space-y-8">
+              <h2 className="text-2xl font-bold">Monadic DNA</h2>
+              <div className="flex gap-4">
+                <Link
+                  href="#"
+                  className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="25" height="25" />
+                    <path
+                      d="M14.5219 10.825L22.4328 1.5625H20.5578L13.6906 9.60469L8.20313 1.5625H1.875L10.1719 13.725L1.875 23.4375H3.75L11.0031 14.9438L16.7984 23.4375H23.1266L14.5219 10.825ZM11.9547 13.8313L11.1141 12.6203L4.425 2.98438H7.30469L12.7016 10.7609L13.5422 11.9719L20.5594 22.0812H17.6797L11.9547 13.8313Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <span className="sr-only">X</span>
+                </Link>
+                <Link
+                  href="#"
+                  className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" />
+                    <path
+                      d="M12 11.3879C11.094 9.62686 8.628 6.34386 6.335 4.72586C4.138 3.17586 3.301 3.44286 2.752 3.69286C2.116 3.97786 2 4.95486 2 5.52786C2 6.10286 2.315 10.2369 2.52 10.9279C3.2 13.2079 5.614 13.9779 7.84 13.7309C4.58 14.2139 1.683 15.4009 5.48 19.6289C9.658 23.9539 11.206 18.7019 12 16.0389C12.794 18.7019 13.708 23.7649 18.444 19.6289C22 16.0389 19.421 14.2139 16.161 13.7309C18.386 13.9779 20.801 13.2079 21.48 10.9279C21.685 10.2379 22 6.10286 22 5.52886C22 4.95386 21.884 3.97886 21.248 3.69086C20.699 3.44286 19.862 3.17386 17.665 4.72386C15.372 6.34486 12.905 9.62786 12 11.3879Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <span className="sr-only">Butterfly</span>
+                </Link>
+
+                <Link
+                  href="#"
+                  className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" />
+                    <path
+                      d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L4 8V18H20V8L12 13ZM12 11L20 6H4L12 11ZM4 8V6V18V8Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <span className="sr-only">Mail</span>
+                </Link>
+
+                <Link
+                  href="#"
+                  className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+                >
+                  <svg
+                    className="h-5 w-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" />
+                    <path
+                      d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <span className="sr-only">Linkedin</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Section */}
+            <div className="grid grid-cols-2 gap-x-16 gap-y-4">
+              <div className="space-y-4">
+                <Link href="#" className="block hover:text-gray-300">
+                  About
+                </Link>
+                <Link href="#" className="block hover:text-gray-300">
+                  Team
+                </Link>
+                <Link href="#" className="block hover:text-gray-300">
+                  FAQ
+                </Link>
+              </div>
+              <div className="space-y-4">
+                <Link href="#" className="block hover:text-gray-300">
+                  For developers
+                </Link>
+                <Link href="#" className="block hover:text-gray-300">
+                  Security
+                </Link>
+                <Link href="#" className="block hover:text-gray-300">
+                  Press
+                </Link>
+              </div>
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="md:col-span-6 grid grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <Link
-                href="#"
-                className="block hover:text-gray-300 transition-colors"
-              >
-                About
+          {/* Bottom Section */}
+          <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
+            <p className="text-base">©2024 Monadic Health</p>
+            <div className="flex gap-6">
+              <Link href="/terms" className="hover:text-gray-300">
+                Terms of Service
               </Link>
-              <Link
-                href="#"
-                className="block text-white hover:text-gray-300 transition-colors"
-              >
-                Team
-              </Link>
-              <Link
-                href="#"
-                className="block text-white hover:text-gray-300 transition-colors"
-              >
-                FAQ
+              <Link href="/privacy" className="hover:text-gray-300">
+                Privacy Policy
               </Link>
             </div>
-            <div className="space-y-4">
-              <Link
-                href="#"
-                className="block text-white hover:text-gray-300 transition-colors"
-              >
-                For developers
-              </Link>
-              <Link
-                href="#"
-                className="block hover:text-gray-300 transition-colors"
-              >
-                Security
-              </Link>
-              <Link
-                href="#"
-                className="block hover:text-gray-300 transition-colors"
-              >
-                Press
-              </Link>
-              <Link
-              href="/terms"
-              className="text-white text-base md:hidden inline-block hover:text-white transition-colors"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="/privacy"
-              className="hover:text-white md:hidden inline-block text-white text-base transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            </div>
-          </nav>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-base text-white">©2024 Monadic Health</p>
-          <div className="flex gap-6 text-sm text-gray-400">
-            <Link
-              href="/terms"
-              className="text-white text-base md:inline hidden hover:text-white transition-colors"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="/privacy"
-              className="hover:text-white md:inline hidden text-white text-base transition-colors"
-            >
-              Privacy Policy
-            </Link>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
