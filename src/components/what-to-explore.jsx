@@ -9,35 +9,35 @@ export default function WhatToExplore() {
       id: 1,
       question: "Are you predisposed to be sensitive to gluten?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
-      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      colors: { start: '#FFFEF9', end: '#FFE5D7' },
       imageUrl: "./images/img01.png"
     },
     {
       id: 2,
       question: "Are you more likely a sprinter or endurance runner?",
       gradient: "from-[#FFEADD] to-[#ECEAFF]",
-      colors: { start: '#FFEADD', end: '#ECEAFF' },
+      colors: { start: '#DDE4FF', end: '#EAF9FF' },
       imageUrl: "./images/img02.png"
     },
     {
       id: 3,
       question: "What's your genetic muscle composition?",
       gradient: "from-[#FFFEF9] to-[#FFE5D7]",
-      colors: { start: '#FFFEF9', end: '#FFE5D7' },
+      colors: { start: '#FCFFD7', end: '#EAF9FF' },
       imageUrl: "./images/img03.png"
     },
     {
       id: 4,
       question: "What's your diabetes risk score?",
       gradient: "from-[#DDE4FF] to-[#EAF9FF]",
-      colors: { start: '#DDE4FF', end: '#EAF9FF' },
+      colors: { start: '#FFFEF9', end: '#FFE5D7' },
       imageUrl: "./images/img04.png"
     },
     {
       id: 5,
       question: "What's your aerobic capacity potential?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
-      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      colors: { start: '#DDE4FF', end: '#EAF9FF' },
       imageUrl: "./images/img05.png"
     }
   ];
@@ -47,28 +47,28 @@ export default function WhatToExplore() {
       id: 6,
       question: "Are you likely to be lactose intolerant?",
       gradient: "from-[#FFEADD] to-[#ECEAFF]",
-      colors: { start: '#FFEADD', end: '#ECEAFF' },
+      colors: { start: '#DDE4FF', end: '#EAF9FF' },
       imageUrl: "./images/img06.png"
     },
     {
       id: 7,
       question: "Are you predisposed to greater flexibility?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
-      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      colors: { start: '#DDE4FF', end: '#EAF9FF' },
       imageUrl: "./images/img07.png"
     },
     {
       id: 8,
       question: "Does your DNA influence your cilantro preference?",
       gradient: "from-[#FFEADD] to-[#FFE5D7]",
-      colors: { start: '#FFEADD', end: '#ECEAFF' },
+      colors: { start: '#DDE4FF', end: '#EAF9FF' },
       imageUrl: "./images/img08.png"
     },
     {
       id: 9,
       question: "Are you more likely to be a coffee lover or hater?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
-      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      colors: { start: '#DDE4FF', end: '#EAF9FF' },
       imageUrl: "./images/img10.png"
     }
   ];
