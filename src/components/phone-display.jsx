@@ -39,8 +39,8 @@ export default function PhoneDisplay() {
       <Image
         src="/images/leftmost-phone.png" // Replace with your image path
         alt="Fruit DNA Insights"
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         className="absolute inset-0 w-full h-full object-cover rounded-3xl"
       />
     </div>
@@ -78,7 +78,7 @@ export default function PhoneDisplay() {
 
     {/* Right Image */}
     <Image
-      src="/images/meteor.png" // Replace with your right image path
+      src="/images/planet.png" // Replace with your right image path
       alt="Right Image"
       className="absolute top-28 left-[75%] transform -translate-x-1/2 -translate-y-1/2 object-cover rounded-full"
       width={100}
