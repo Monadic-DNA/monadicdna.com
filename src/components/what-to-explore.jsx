@@ -9,31 +9,36 @@ export default function WhatToExplore() {
       id: 1,
       question: "Are you predisposed to be sensitive to gluten?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
-      colors: { start: '#FCFFD7', end: '#EAF9FF' }
+      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      imageUrl: "./images/img01.png"
     },
     {
       id: 2,
       question: "Are you more likely a sprinter or endurance runner?",
       gradient: "from-[#FFEADD] to-[#ECEAFF]",
-      colors: { start: '#FFEADD', end: '#ECEAFF' }
+      colors: { start: '#FFEADD', end: '#ECEAFF' },
+      imageUrl: "./images/img02.png"
     },
     {
       id: 3,
       question: "What's your genetic muscle composition?",
-      gradient: "from-[#DDE4FF] to-[#EAF9FF]",
-      colors: { start: '#DDE4FF', end: '#EAF9FF' }
+      gradient: "from-[#FFFEF9] to-[#FFE5D7]",
+      colors: { start: '#FFFEF9', end: '#FFE5D7' },
+      imageUrl: "./images/img03.png"
     },
     {
       id: 4,
       question: "What's your diabetes risk score?",
-      gradient: "from-[#FFFEF9] to-[#FFE5D7]",
-      colors: { start: '#FFFEF9', end: '#FFE5D7' }
+      gradient: "from-[#DDE4FF] to-[#EAF9FF]",
+      colors: { start: '#DDE4FF', end: '#EAF9FF' },
+      imageUrl: "./images/img04.png"
     },
     {
       id: 5,
       question: "What's your aerobic capacity potential?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
-      colors: { start: '#FCFFD7', end: '#EAF9FF' }
+      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      imageUrl: "./images/img05.png"
     }
   ];
 
@@ -42,25 +47,29 @@ export default function WhatToExplore() {
       id: 6,
       question: "Are you likely to be lactose intolerant?",
       gradient: "from-[#FFEADD] to-[#ECEAFF]",
-      colors: { start: '#FFEADD', end: '#ECEAFF' }
+      colors: { start: '#FFEADD', end: '#ECEAFF' },
+      imageUrl: "./images/img06.png"
     },
     {
       id: 7,
       question: "Are you predisposed to greater flexibility?",
-      gradient: "from-[#DDE4FF] to-[#EAF9FF]",
-      colors: { start: '#DDE4FF', end: '#EAF9FF' }
+      gradient: "from-[#FCFFD7] to-[#EAF9FF]",
+      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      imageUrl: "./images/img07.png"
     },
     {
       id: 8,
       question: "Does your DNA influence your cilantro preference?",
-      gradient: "from-[#FFFEF9] to-[#FFE5D7]",
-      colors: { start: '#FFFEF9', end: '#FFE5D7' }
+      gradient: "from-[#FFEADD] to-[#FFE5D7]",
+      colors: { start: '#FFEADD', end: '#ECEAFF' },
+      imageUrl: "./images/img08.png"
     },
     {
       id: 9,
       question: "Are you more likely to be a coffee lover or hater?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
-      colors: { start: '#FCFFD7', end: '#EAF9FF' }
+      colors: { start: '#FCFFD7', end: '#EAF9FF' },
+      imageUrl: "./images/img10.png"
     }
   ];
 
@@ -101,11 +110,12 @@ export default function WhatToExplore() {
               >
                 <div className={`rounded-3xl px-3 py-4 border border-black flex flex-col justify-center gap-y-0 bg-gradient-to-br ${card.gradient} h-max-fit`}>
                   <div className="aspect-square mb-2 flex items-center justify-center">
-                    <CustomShape 
-                      startColor={card.colors.start}
-                      endColor={card.colors.end}
-                      className="w-20 sm:w-32 h-auto"
-                    />
+                  <CustomShape
+  startColor={card.colors.start}
+  endColor={card.colors.end}
+  imageUrl={card.imageUrl}
+  className="w-20 sm:w-32 h-auto"
+/>
                   </div>
                   <p className={`font-unbounded h-10 sm:h-12 flex justify-center items-center rounded-2xl border border-black px-3 py-2.5 bg-gradient-to-tr from-${card.colors.start} to-${card.colors.end} text-[9px] sm:text-[10px] text-center font-medium`}>
                     {card.question}
@@ -129,6 +139,7 @@ export default function WhatToExplore() {
                     <CustomShape 
                       startColor={card.colors.start}
                       endColor={card.colors.end}
+                      imageUrl={card.imageUrl}
                       className="w-20 sm:w-32 h-auto"
                     />
                   </div>
