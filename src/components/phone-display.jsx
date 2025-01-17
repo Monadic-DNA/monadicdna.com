@@ -71,7 +71,7 @@ export default function PhoneDisplay() {
     <Image
       src="/images/meteor.png" // Replace with your left image path
       alt="Left Image"
-      className="absolute top-28 left-[25%] transform -translate-x-1/2 -translate-y-1/2 object-cover rounded-full"
+      className="absolute top-28 left-[25%] transform -translate-x-1/2 -translate-y-1/2 object-cover "
       width={100}
       height={100}
     />
