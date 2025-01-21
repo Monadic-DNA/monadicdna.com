@@ -1,4 +1,3 @@
-import { Unbounded } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -10,17 +9,34 @@ export default {
   ],
   theme: {
   	extend: {
-		fontFamily: {
-			unbounded: [
-				'var(--font-unbounded)'
-			],
-			inter: [
-				'var(--font-inter)'
-			]
-		},
+
+		animation: {
+			'star-movement-bottom': 'star-movement-bottom linear infinite alternate',
+			'star-movement-top': 'star-movement-top linear infinite alternate',
+		  },
+		  keyframes: {
+			'star-movement-bottom': {
+			  '0%': { transform: 'translate(0%, 0%)', opacity: '1' },
+			  '100%': { transform: 'translate(-100%, 0%)', opacity: '0' },
+			},
+			'star-movement-top': {
+			  '0%': { transform: 'translate(0%, 0%)', opacity: '1' },
+			  '100%': { transform: 'translate(100%, 0%)', opacity: '0' },
+			},
+		  },
+		  
+  		fontFamily: {
+  			unbounded: [
+  				'var(--font-unbounded)'
+  			],
+  			inter: [
+  				'var(--font-inter)'
+  			]
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+  			footerBg: '#0D0C0C',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -64,7 +80,8 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+  		
   	}
   },
   plugins: [require("tailwindcss-animate")],

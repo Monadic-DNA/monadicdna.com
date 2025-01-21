@@ -14,7 +14,7 @@ export default function FeaturesGrid() {
   ];
 
   return (
-    <section className="w-full md:py-16 py-8 bg-[#F6F6F6] border-y border-y-black">
+    <section className="w-full md:py-16 py-16 bg-[#F6F6F6] border-y border-y-black">
       <div className="container mx-auto max-w-screen-xl px-4 sm:px-6">
         <div className="flex flex-col items-center gap-5 sm:flex-row sm:flex-wrap sm:justify-center">
           {features.map((feature, index) => (

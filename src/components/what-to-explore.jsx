@@ -74,7 +74,7 @@ export default function WhatToExplore() {
   ];
 
   return (
-    <section className="py-16 px-4 md:px-6 lg:px-8 relative z-10 overflow-hidden">
+    <section className="py-16  md:px-6 lg:px-8 relative z-10 overflow-hidden">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-12">
         Here's what you can explore
       </h2>
@@ -91,17 +91,18 @@ export default function WhatToExplore() {
         }
         
         .marquee-left {
-          animation: slideLeft 30s linear infinite;
+          animation: slideLeft 25s linear infinite;
         }
         
         .marquee-right {
-          animation: slideRight 30s linear infinite;
+          animation: slideRight 25s linear infinite;
         }
       `}</style>
+      
 
       <div className="space-y-4">
         {/* First Row - Left to Right */}
-        <div className="relative z-10 overflow-hidden">
+        <div className="relative z-10 pb-6 md:pb-12 overflow-hidden">
           <div className="marquee-right flex gap-3">
             {[...row1Cards, ...row1Cards].map((card, index) => (
               <div
@@ -153,7 +154,7 @@ export default function WhatToExplore() {
         </div>
       </div>
 
-      <div className="mt-24 mb-16 flex justify-center">
+      <div className="hidden md:flex mt-24 mb-16  justify-center">
         <div className="border-2 border-black p-4 max-w-fit text-center">
           <p className="text-black text-base font-bold">
             We'll keep adding new insights as we scour the latest research for the newest discoveries!
