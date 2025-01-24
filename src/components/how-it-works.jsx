@@ -1,7 +1,7 @@
 
 export default function HowItWorks() {
   return (
-    <section className="w-full py-12 md:py-24">
+    <section className="w-full bg-[#1A1A1A] py-12 md:py-24">
       <div className="container max-w-7xl px-6 mx-auto">
         {/* First Row */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 mb-16 md:mb-24 items-center">

@@ -81,10 +81,11 @@ export default function WhyUs() {
   }, [calculatePaths])
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto px-4 py-8 md:py-16" ref={containerRef}>
+    <div className="bg-[#1a1a1a]">
+    <div className="relative w-full max-w-7xl mx-auto px-4 py-8 md:py-16 bg-[#1a1a1a]" ref={containerRef}>
       <svg className="absolute inset-0 w-full h-full pointer-events-none">
         {paths.map((path, index) => (
-          <path key={index} d={path} fill="none" stroke="rgba(0, 0, 0, 0.2)" strokeWidth="2" strokeDasharray="4 4" />
+          <path key={index} d={path} fill="none" stroke="rgba(255,255,255)" strokeWidth="2" strokeDasharray="4 4" />
         ))}
       </svg>
 
@@ -128,7 +129,7 @@ export default function WhyUs() {
             <div
               className={`content-box col-span-12 md:col-span-6 ${
                 index % 2 !== 0 ? "md:col-start-7" : ""
-              } bg-white rounded p-8 shadow-sm border transition-all duration-300 ${
+              } bg-[#FFFDF6] rounded-2xl p-8 shadow-sm border transition-all duration-300 ${
                 activeCard === index ? "border-black shadow-lg" : "border-gray-200"
               }`}
             >
@@ -155,6 +156,7 @@ export default function WhyUs() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   )
 }
