@@ -69,6 +69,14 @@ body {
   }
 }
 
+.custom-shadow{
+  height: 1px;
+  width: 1px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  transform:translateY(200px);
+  box-shadow: 0 0  500px 250px rgb(185, 77, 231, 0.24);
+}
 @layer base {
   * {
     @apply border-border;

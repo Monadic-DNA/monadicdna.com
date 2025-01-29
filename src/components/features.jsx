@@ -6,10 +6,21 @@ export default function Features() {
 
    {/* Card 1  */}
    <div className="p-4 text-center">
-<div className="mb-3 ">
-<img src="/images/features/23andme-logo.png" alt="23 and me logo" />
-<img src="/images/features/ancestry-dna.png" alt="Ancestory DNA" />
-<img src="/images/features/collection-tube.png" alt="Collection-tube" />
+<div className="mb-8 relative ">
+    <div className="flex ">
+        <div>
+        <img className="px-8 py-2 border  border-white rounded-2xl " src="/images/features/23andme-logo.png" alt="23 and me logo" />
+
+        </div>
+
+<div className="flex flex-col mt-[-12px] gap-y-2">
+    <div className="ml-4 -mt-4">
+<img className="px-3 py-2 border  border-white rounded-2xl " src="/images/features/collection-tube.png" alt="Collection-tube" />
+</div>
+<img className="px-8 mt-4 py-4 border  w-auto border-white rounded-2xl " src="/images/features/ancestry-dna.png" alt="Ancestory DNA" />
+
+</div>
+</div>
 </div>
 <h3 className=" font-black text-center text-white">Import and secure your DNA File</h3>
 <p className="text-white text-center">from other services for FREE or buy a DNA kit from us to get sequenced from a trusted, privacy-conscious, certified lab partner</p>
@@ -19,9 +30,9 @@ export default function Features() {
 
        {/* Card 2  */}
        <div className="p-4 text-center">
-        
-       <div className="mb-3">
-    <img className="w-24 mx-auto inline-block" src="/images/features/second-feature.png" alt="Second feature" />
+    
+       <div className="mb-8">
+    <img className="w-32 mx-auto inline-block" src="/images/features/second-feature.png" alt="Second feature" />
     </div>
 
 <h3 className=" font-black text-center text-white">
@@ -35,8 +46,8 @@ export default function Features() {
        {/* Card 3  */}
        <div className="p-4 ">
 
-       <div className="mb-3">
-    <img className="w-20 mx-auto inline-block h-auto" src="/images/features/third-feature.svg" alt="Third feature" />
+       <div className="mb-6 flex justify-between">
+    <img className="w-24 mx-auto inline-block" src="/images/features/third-feature.svg" alt="Third feature" />
     </div>
 
 

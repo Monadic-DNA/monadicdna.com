@@ -82,7 +82,7 @@ export default function WhyUs() {
 
   return (
     <div className="bg-[#1a1a1a]">
-    <div className="relative w-full max-w-7xl mx-auto px-4 py-8 md:py-16 bg-[#1a1a1a]" ref={containerRef}>
+    <div className="relative w-full max-w-7xl mx-auto px-4 py-8 md:py-24 bg-[#1a1a1a]" ref={containerRef}>
       <svg className="absolute inset-0 w-full h-full pointer-events-none">
         {paths.map((path, index) => (
           <path key={index} d={path} fill="none" stroke="rgba(255,255,255)" strokeWidth="2" strokeDasharray="4 4" />

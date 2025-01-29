@@ -4,25 +4,22 @@ import Image from "next/image";
 
 export default function DnaTransferSection() {
   return (
-    <section className="bg-[#1A1A1A] md:bg-black text-white py-24">
+    <section className="bg-darkMain text-white py-24">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col md:flex md:flex-row justify-between gap-16 items-start">
           {/* Left Column */}
-          <div className="space-y-8 w-full md:w-3/5 max-w-xl">
+          <div className="space-y-4 w-full md:w-3/5 max-w-xl">
             <div className="space-y-2">
-              <h2 className="text-2xl  md:text-3xl font-black leading-tight">
+              <h2 className="text-2xl  md:text-3xl font-bold leading-tight">
                 Already sequenced your DNA?
               </h2>
-              <h2 className="text-2xl md:text-3xl font-black leading-tight">
+              <h2 className="text-2xl md:text-3xl font-bold leading-tight">
                 Move your data to the Monadic vault
               </h2>
             </div>
 
-            <p className="text-base text-gray-300 leading-relaxed ">
-              You can export your genetic data from services like 23andMe or
-              Ancestry DNA and store it securely in a place where you have full
-              control. With advanced privacy measures, your data stays protected
-              and accessible only to you.
+            <p className="text-base text-gray-300 leading-snug ">
+            You can export your genetic data from services like 23andMe or Ancestry DNA and store it securely in a place where you have full control. With advanced privacy measures, your data stays protected and accessible only to you.
             </p>
             <p className="md:hidden fle">Early users get access to insights that won’t be available later!</p>
 
@@ -43,7 +40,7 @@ export default function DnaTransferSection() {
 
           {/* Right Column - DNA Service Logos */}
           <div className="w-full md:w-2/5 ">
-          <div className="flex flex-wrap justify-center mb-6 items-start gap-x-3 gap-y-4">
+          <div className="flex flex-wrap justify-center mb-6 items-start gap-x-3 gap-y-6">
 
           <div className="bg-white max-w-fit rounded-3xl px-4 h-10 md:px-6 md:h-12 flex items-center justify-center">
               <svg

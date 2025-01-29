@@ -33,7 +33,7 @@ export default function Footer() {
   return (
   <footer
       ref={footerRef}
-      className={`bg-[#0D0C0C] text-white py-16 px-4 md:px-12 transition-opacity duration-1000 ease-in-out ${
+      className={`bg-[#0D0C0C] font-inter text-white py-16 px-4 md:px-12 transition-opacity duration-1000 ease-in-out ${
         isVisible ? "opacity-100" : "opacity-30"
       }`}>
       <div className="max-w-7xl mx-auto">
@@ -281,7 +281,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom Section */}
-          <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
+          <div className="mt-8 pt-4 fon border-white/10 flex justify-start gap-x-6 items-center">
             <p className="text-base">©2024 Monadic Health</p>
             <div className="flex gap-6">
               <Link href="/terms" className="hover:text-gray-300">
