@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx", "src/components/faq.jsx", "src/components/marquee-component.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx", "src/components/faq.jsx", "src/components/marquee-component.jsx", "src/components/ui/accordion.tsx"],
   "exclude": ["node_modules"]
 }

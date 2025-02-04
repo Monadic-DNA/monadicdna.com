@@ -1,11 +1,11 @@
 export default function DNASecurity() {
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
+      <div className=" bg-[#FBFBFB] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
         {/* Container for responsive grid/flex layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           {/* Content Section */}
           <div className="max-w-xl">
-            <h1 className="text-3xl sm:text-4xl md:text-3xl font-black leading-tight mb-6 sm:mb-8">
+            <h1 className="text-2xl sm:text-4xl md:text-3xl font-black leading-tight mb-6 sm:mb-8">
               Blind computation technology keeps DNA data secure
             </h1>
   
@@ -42,10 +42,8 @@ export default function DNASecurity() {
               <img
                 src="/images/illsutration.svg"
                 alt="Artistic illustration representing data security"
-                className="w-full h-auto object-contain"
-                style={{
-                  maxHeight: "600px",
-                }}
+                className="w-full max-h-[400px] md:max-h-[600px] h-auto object-contain"
+               
               />
             </div>
           </div>

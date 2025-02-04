@@ -47,7 +47,7 @@ export default function Footer() {
               Privacy Policy
             </Link>
           </div>
-          <div className="flex gap-4">
+          <div className="flex my-8 gap-4">
             <Link
               href="#"
               className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
@@ -87,7 +87,7 @@ export default function Footer() {
                   fill="black"
                 />
               </svg>
-              <span className="sr-only">Butterfly</span>
+              <span className="sr-only">Blusky</span>
             </Link>
 
             <Link
