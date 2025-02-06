@@ -16,63 +16,70 @@ export default function FAQ() {
         <Accordion type="single" collapsible defaultValue="item-1" className="space-y-4">
           <AccordionItem value="item-1" className="border-none">
             <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
-              How do I get the Monadic DNA app?
+              Can I delete my data?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-              Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit
-              amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.
+              Yes, you can delete your data at any time. MonadicDNA gives you full control to remove your profile and DNA file directly from the app. When you delete your data, it's completely erased from the app, backup locations, including any decentralized storage locations. Just keep in mind that once it's gone, it cannot be recovered.
             </AccordionContent>
           </AccordionItem>
 
-<hr />
+          <hr />
           <AccordionItem value="item-2" className="border-none">
             <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
-              What devices are supported?
+              Where is the DNA file stored?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-              Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit
-              amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.
+              Your encrypted DNA file is securely stored locally on your device and decentralized secure storage for added redundancy. You may also choose to back up your encrypted DNA file on personal storage, such as your iCloud. MonadicDNA does not store your DNA file on centralized servers, ensuring maximum security and giving you complete control over your DNA file.
             </AccordionContent>
           </AccordionItem>
-<hr />
+
+          <hr />
           <AccordionItem value="item-3" className="border-none">
             <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
-              Why do I need to keep this data private?
+              Which DNA services does MonadicDNA support for uploads?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-              Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit
-              amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.
+              We currently accept raw DNA files from the following services:
+              <ul className="list-disc pl-6 mt-2">
+                <li>AncestryDNA</li>
+                <li>23andMe</li>
+                <li>MyHeritage</li>
+                <li>FamilyTreeDNA</li>
+                <li>LivingDNA</li>
+                <li>Dante Labs</li>
+                <li>HomeDNA</li>
+              </ul>
+              Simply download your raw DNA data from one of these providers and upload it to MonadicDNA to get started.
             </AccordionContent>
           </AccordionItem>
-<hr />
+
+          <hr />
           <AccordionItem value="item-4" className="border-none">
             <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
-              Why do I need to keep this data private?
+              How is my DNA file secured?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-              Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit
-              amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.
+              Your DNA file is encrypted using a private key that only you have access to. This ensures that no one, not even MonadicDNA, can view or access your unencrypted data without your permission.
             </AccordionContent>
           </AccordionItem>
-<hr />
+
+          <hr />
           <AccordionItem value="item-5" className="border-none">
             <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
-              I don't have a DNA data file, can I still use this app?
+              What happens if I delete or reinstall the app, or get a new phone?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-              Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit
-              amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.
+              Switching devices or reinstalling MonadicDNA is easy. Simply log in with your existing credentials, and your profile, encrypted DNA file, settings, and report history will be restored.
             </AccordionContent>
           </AccordionItem>
-<hr />
+
+          <hr />
           <AccordionItem value="item-6" className="border-none">
             <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
-              How long does it take to get results?
+              Will my data be shared with third parties?
             </AccordionTrigger>
-            
-            <AccordionContent className="text-[16px] tsext-left  text-[#4B5563] leading-[1.6]">
-              Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit
-              amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.
+            <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
+              No, your DNA data stays completely private. Everything is processed directly on your device, so it never leaves your hands unless you decide to share it. Your encrypted DNA file and any insights generated are only accessible to you. If you want, you can choose to share data, specific insights, or reports with others in the MonadicDNA marketplace, but that decision is entirely up to you. Privacy and security aren't just features — they're the foundation of how MonadicDNA is designed to work.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
