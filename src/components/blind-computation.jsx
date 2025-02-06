@@ -40,7 +40,7 @@ export default function DNASecurity() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[400px] lg:max-w-[500px]">
               <img
-                src="/images/illsutration.svg"
+                src="/images/blind-computation.svg"
                 alt="Artistic illustration representing data security"
                 className="w-full max-h-[400px] md:max-h-[600px] h-auto object-contain"
                

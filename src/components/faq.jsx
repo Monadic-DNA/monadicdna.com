@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function FAQ() {
   return (
-    <div className="bg-[#FFFFFB]">
+    <div id="faq" className="bg-[#FFFFFB]">
 
 
    

@@ -32,15 +32,13 @@ const Navbar = () => {
 
           </Link>
           <div className="hidden items-center gap-8 md:flex">
-            <Link href="/about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
               About
             </Link>
-            <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            <Link href="/#faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
               FAQ
             </Link>
-            <Link href="/developers" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-              For Developers
-            </Link>
+        
           </div>
           <button className="md:hidden" onClick={toggleSidebar}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,15 +59,13 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex flex-col gap-4 p-5">
-          <Link href="/about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+          <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
             About
           </Link>
-          <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+          <Link href="/#faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
             FAQ
           </Link>
-          <Link href="/developers" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-            For Developers
-          </Link>
+        
         </div>
       </div>
 

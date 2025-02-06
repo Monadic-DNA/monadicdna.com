@@ -6,7 +6,7 @@ export default function Features() {
 
    {/* Card 1  */}
    <div className="p-4 text-center">
-<div className="mb-8 relative ">
+<div className="mb-8 relative mx-auto ">
     <div className="flex ">
         <div>
         <img className="px-8 py-2 border  border-white rounded-2xl " src="/images/features/23andme-logo.png" alt="23 and me logo" />
