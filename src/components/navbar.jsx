@@ -24,11 +24,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full z-50 ">
+      <nav className="fixed w-full z-50 bg-white border-b border-gray-800">
         <AnnouncementHeader />
         <div className="mx-auto flex h-16 md:h-20  w-full max-w-[1440px] items-center justify-between px-5 ">
-          <Link href="/" className="text-[22px] font-medium leading-[26px] tracking-[-0.24px]">
-         <img className='h-14 w-auto' src="/images/logo.png" alt="logo" />
+          <Link href="/">
+         <img className='h-10 md:h-14 w-auto' src="/images/logo.png" alt="logo" />
 
           </Link>
           <div className="hidden items-center gap-8 md:flex">
@@ -41,7 +41,7 @@ const Navbar = () => {
         
           </div>
           <button className="md:hidden" onClick={toggleSidebar}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 12H21M3 6H21M3 18H21" stroke="#344054" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
@@ -49,21 +49,29 @@ const Navbar = () => {
       </nav>
 
       {/* Side Navigation */}
-      <div className={`fixed navbar inset-y-0 right-0 z-50 w-64 transform bg-white shadow-lg transition-transform duration-300 ease-in-out md:hidden ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed navbar inset-y-0 right-0 z-50 w-full transform bg-white shadow-lg transition-transform duration-300 ease-in-out md:hidden ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex h-[72px] items-center justify-between border-b border-[#EAECF0] px-5">
-          <span className=" font-medium leading-[26px] tracking-[-0.24px]">Menu</span>
           <button onClick={toggleSidebar}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18 6L6 18M6 6L18 18" stroke="#344054" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
         </div>
-        <div className="flex flex-col gap-4 p-5">
-          <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+        <div className="flex flex-col gap-4 gap-y-3 p-5">
+
+          <Link href="/#about" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
             About
           </Link>
-          <Link href="/#faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+          <Link href="/faq" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
             FAQ
+          </Link>
+
+          <Link href="/terms" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
+            Terms & Conditions
+          </Link>
+
+          <Link href="/privacy" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
+            Privacy Policy
           </Link>
         
         </div>

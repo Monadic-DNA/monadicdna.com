@@ -2,6 +2,7 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function FAQ() {
   return (
@@ -86,9 +87,9 @@ export default function FAQ() {
       </div>
 
       <div className="flex justify-center mt-12">
-        <Button variant="outline" className="h-12 px-8 text-sm font-bold border border-[#1A1A1A] text-[#1A1A1A] bg-transparent rounded-none">
+        <Link href={"/faq"} variant="outline" className="h-12 px-8 text-sm font-bold border border-[#1A1A1A] text-[#1A1A1A] bg-transparent rounded-none">
           See More
-        </Button>
+        </Link>
       </div>
     </div>
     </div>
