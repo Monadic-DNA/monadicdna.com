@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { AnnouncementBar } from '@/components/announcement-bar'
 
 export default function Hero() {
   return (
@@ -12,7 +11,6 @@ export default function Hero() {
         <div className="mx-auto max-w-5xl text-center">
           {/* Launch Banner */}
        
-          <AnnouncementBar/>
 
           {/* Main Heading */}
           <h1 className="mb-6  text-2xl sm:text-4xl text-balance font-black leading-tight tracking-tight ">

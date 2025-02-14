@@ -8,7 +8,16 @@ export default function DNASecurity() {
             <h1 className="text-2xl sm:text-4xl md:text-3xl font-black leading-tight mb-6 sm:mb-8">
               Blind computation technology keeps DNA data secure
             </h1>
-  
+            <div className="flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[400px] lg:max-w-[500px]">
+              <img
+                src="/images/blind-computation.svg"
+                alt="Artistic illustration representing data security"
+                className="w-full max-h-[400px] md:max-h-[600px] h-auto object-contain"
+               
+              />
+            </div>
+          </div>
             <div className="space-y-4 sm:space-y-6 text-base sm:text-lg mb-8">
               <p>
                 While it sounds like magic, we're building with the latest in advanced encryption technologies like Fully
@@ -37,16 +46,7 @@ export default function DNASecurity() {
           </div>
   
           {/* Image Section */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[400px] lg:max-w-[500px]">
-              <img
-                src="/images/blind-computation.svg"
-                alt="Artistic illustration representing data security"
-                className="w-full max-h-[400px] md:max-h-[600px] h-auto object-contain"
-               
-              />
-            </div>
-          </div>
+          
         </div>
       </div>
     )
