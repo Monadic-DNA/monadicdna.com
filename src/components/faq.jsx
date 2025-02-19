@@ -9,7 +9,7 @@ export default function FAQ() {
 
 
    
-    <div className="w-full  max-w-3xl mx-auto px-6 md:px-4 py-24 md:py-32">
+    <div className="w-full  max-w-3xl mx-auto px-6 md:px-4 py-24 md:pt-24 md:pb-32">
       <h1 className="text-3xl font-bold  text-center mb-12">FAQ</h1>
 
       <div className="border-[0.5px] rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20 lg:px-24">

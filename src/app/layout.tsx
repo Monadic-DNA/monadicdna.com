@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
-import { Unbounded, Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import NavPill from "@/components/nav-pill";
+import Navbar from "@/components/navbar";
+import type { Metadata } from "next";
+import { Inter, Unbounded } from "next/font/google";
+import "./globals.css";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${unbounded.variable} ${inter.variable} antialiased`}
       >
         <Navbar/>
+        <NavPill/>
         {children}
         <Footer/>
       </body>
