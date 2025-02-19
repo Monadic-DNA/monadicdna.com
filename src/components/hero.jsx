@@ -7,7 +7,7 @@ export default function Hero() {
      
 
       {/* Hero Section */}
-      <main className="px-6 md:pt-32 pt-20 lg:px-8">
+      <main className="px-6 md:pt-32 pt-32 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           {/* Launch Banner */}
        

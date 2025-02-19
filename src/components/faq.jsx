@@ -1,7 +1,6 @@
 "use client"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export default function FAQ() {
@@ -10,23 +9,24 @@ export default function FAQ() {
 
 
    
-    <div className="w-full  max-w-3xl mx-auto px-6 md:px-4 py-20">
+    <div className="w-full  max-w-3xl mx-auto px-6 md:px-4 py-24 md:py-32">
       <h1 className="text-3xl font-bold  text-center mb-12">FAQ</h1>
 
-      <div className="border-[0.5px] rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20">
-        <Accordion type="single" collapsible defaultValue="item-1" className="space-y-4">
+      <div className="border-[0.5px] rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20 lg:px-24">
+        <Accordion type="single" collapsible className="space-y-4">
+          
+
           <AccordionItem value="item-1" className="border-none">
-            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
-              Can I delete my data?
+            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555]  transition-all duration-300 font-medium hover:no-underline">
+            Can I delete my data?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-              Yes, you can delete your data at any time. MonadicDNA gives you full control to remove your profile and DNA file directly from the app. When you delete your data, it's completely erased from the app, backup locations, including any decentralized storage locations. Just keep in mind that once it's gone, it cannot be recovered.
+            Yes, you can delete your data at any time. MonadicDNA gives you full control to remove your profile and DNA file directly from the app. When you delete your data, it's completely erased from the app, backup locations, including any decentralized storage locations. Just keep in mind that once it's gone, it cannot be recovered.
             </AccordionContent>
           </AccordionItem>
-
           <hr />
           <AccordionItem value="item-2" className="border-none">
-            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
+            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
               Where is the DNA file stored?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
@@ -36,7 +36,7 @@ export default function FAQ() {
 
           <hr />
           <AccordionItem value="item-3" className="border-none">
-            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
+            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300 font-medium hover:no-underline">
               Which DNA services does MonadicDNA support for uploads?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
@@ -56,7 +56,7 @@ export default function FAQ() {
 
           <hr />
           <AccordionItem value="item-4" className="border-none">
-            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
+            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
               How is my DNA file secured?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
@@ -66,7 +66,7 @@ export default function FAQ() {
 
           <hr />
           <AccordionItem value="item-5" className="border-none">
-            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
+            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
               What happens if I delete or reinstall the app, or get a new phone?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
@@ -76,7 +76,7 @@ export default function FAQ() {
 
           <hr />
           <AccordionItem value="item-6" className="border-none">
-            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain font-medium hover:no-underline">
+            <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
               Will my data be shared with third parties?
             </AccordionTrigger>
             <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
@@ -87,7 +87,7 @@ export default function FAQ() {
       </div>
 
       <div className="flex justify-center mt-12">
-        <Link href={"/faq"} variant="outline" className="h-12 px-8 text-sm font-bold border border-[#1A1A1A] text-[#1A1A1A] bg-transparent rounded-none">
+        <Link href={"/faq"} variant="outline" className="h-12 px-8 text-sm flex justify-center items-center font-bold border border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-all duration-300 bg-transparent rounded-none">
           See More
         </Link>
       </div>
