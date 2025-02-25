@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import NavPill from "@/components/nav-pill";
-import Navbar from "@/components/navbar";
+import NavbarDesktop from "@/components/navbar-desktop";
+import NavbarMobile from "@/components/navbar-mobile";
 import type { Metadata } from "next";
 import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
@@ -30,7 +31,8 @@ export default function RootLayout({
       <body
         className={`${unbounded.variable} ${inter.variable} antialiased`}
       >
-        <Navbar/>
+        <NavbarMobile/>
+        <NavbarDesktop/>
         <NavPill/>
         {children}
         <Footer/>

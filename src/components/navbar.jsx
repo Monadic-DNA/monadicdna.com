@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import AnnouncementHeader from './announcement-header';
-import Sidebar from './sidebar'; // Import the Sidebar component
+import Sidebar from './sidebar';
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen)
@@ -31,7 +32,7 @@ const Navbar = () => {
           <Link href="/">
             <img className="h-10 md:h-14 w-auto" src="/images/logo.png" alt="logo" />
           </Link>
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-8 md:flex"> 
             <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
               About
             </Link>

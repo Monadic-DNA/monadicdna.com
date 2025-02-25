@@ -7,13 +7,14 @@ export default function Hero() {
      
 
       {/* Hero Section */}
-      <main className="px-6 md:pt-32 pt-32 lg:px-8">
+      <main className="px-6 pt-16 md:pt-16  lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           {/* Launch Banner */}
        
 
+
           {/* Main Heading */}
-          <h1 className="mb-6  text-2xl sm:text-4xl text-balance font-black leading-tight tracking-tight ">
+          <h1 className="mb-6  text-2xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight ">
             DNA insights with privacy, autonomy, and boundless curiosity
           </h1>
 

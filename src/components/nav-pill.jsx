@@ -8,7 +8,7 @@ const NavPill = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 800) {
         setIsVisible(true)
       } else {
         setIsVisible(false)
@@ -22,22 +22,22 @@ const NavPill = () => {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-full max-w-[700px] px-4 transition-opacity duration-300 ${
+      className={`fixed z-[9999] top-4 left-1/2 transform -translate-x-1/2 w-full max-w-3xl px-4 transition-opacity duration-300 hidden md:block ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="bg-black bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-full py-2 px-4 flex justify-between items-center">
+      <div className="bg-white border border-gray-800 shadow-lg backdrop-filter backdrop-blur-sm rounded-full py-1.5 px-8 flex justify-between items-center">
       <Link href="/">
          <img className='h-10 md:h-14 w-auto' src="/images/logo.png" alt="logo" />
 
           </Link>
 
          
-        <div className="flex space-x-4">
-        <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+        <div className="flex space-x-8">
+        <Link href="/#about" className="text-base leading-6 text-black hover:text-gray-700 transition-colors duration-300">
               About
             </Link>
-            <Link href="/#faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            <Link href="/#faq" className="text-base leading-6 text-black hover:text-gray-700 transition-colors duration-300">
               FAQ
             </Link>
         </div>
