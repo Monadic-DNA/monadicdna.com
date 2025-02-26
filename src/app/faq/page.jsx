@@ -1,16 +1,18 @@
-"use client"
+export const metadata = {
+  title: 'Frequently Asked Questions',
+}
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function FAQPage() {
   return (
     <div>
-      <div id="faq" className="bg-[#FFFFFB] py-20">
+      <div id="faq" className="bg-[#FFFFFB]">
 
         <div className="w-full  max-w-3xl mx-auto px-6 md:px-4 py-20">
           <h1 className="text-3xl font-bold  text-center mb-12">User FAQs</h1>
 
-          <div className="border-[0.5px] rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20 lg:px-24">
+          <div className="border-[0.5px] bg-white rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20 lg:px-24">
             <Accordion type="single" collapsible className="space-y-4">
 
 
@@ -82,7 +84,7 @@ export default function FAQPage() {
 
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-7" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Can I upload the DNA file for another person to my account?
                 </AccordionTrigger>
@@ -94,7 +96,7 @@ export default function FAQPage() {
 
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-8" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Can I upload the DNA of my pet?
                 </AccordionTrigger>
@@ -105,7 +107,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-9" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Can I export my DNA file if I want to use it elsewhere?
                 </AccordionTrigger>
@@ -116,7 +118,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-10" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 What happens if I delete or reinstall the app, or get a new phone?
                 </AccordionTrigger>
@@ -127,7 +129,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-11" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 How long does it take to run a report?
                 </AccordionTrigger>
@@ -138,7 +140,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-12" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 How is my DNA file secured?
                 </AccordionTrigger>
@@ -149,7 +151,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-13" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Should I back up my private key?
                 </AccordionTrigger>
@@ -160,7 +162,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-14" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Can I recover my private key if I lose it?
                 </AccordionTrigger>
@@ -171,7 +173,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-15" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 What happens if I lose my private key and my device and don’t have iCloud sync enabled?
                 </AccordionTrigger>
@@ -182,7 +184,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-16" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Where is MonadicDNA based?
                 </AccordionTrigger>
@@ -194,7 +196,7 @@ export default function FAQPage() {
 
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-17" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Will my data be shared with third parties?
                 </AccordionTrigger>
@@ -204,7 +206,7 @@ export default function FAQPage() {
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-18" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 What is the science behind the insights?
                 </AccordionTrigger>
@@ -217,7 +219,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-19" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 What features work offline vs. requiring Cloud connectivity?
                 </AccordionTrigger>
@@ -228,7 +230,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-20" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Can insights be accessed without an Internet connection once processed?
                 </AccordionTrigger>
@@ -239,7 +241,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-21" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 How much free storage does a user typically need on their iPhone and/or iCloud for MonadicDNA?
                 </AccordionTrigger>
@@ -250,7 +252,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-22" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 How is my DNA sample collected?
                 </AccordionTrigger>
@@ -262,7 +264,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
 
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-23" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 Where is the DNA sequencing lab located?
                 </AccordionTrigger>
@@ -273,7 +275,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-24" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 What happens to my saliva sample after testing?
                 </AccordionTrigger>
@@ -284,7 +286,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
               </AccordionItem>
 
               <hr />
-              <AccordionItem value="item-6" className="border-none">
+              <AccordionItem value="item-25" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 What features work offline vs. requiring Cloud connectivity?
                 </AccordionTrigger>
@@ -301,7 +303,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
           {/*
           <h1 className="text-3xl font-bold  text-center mb-12 mt-24">MonadicDNA Test Kit FAQs </h1>
 
-          <div className="border-[0.5px] rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20 lg:px-24">
+          <div className="border-[0.5px] bg-white rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20 lg:px-24">
             <Accordion type="single" collapsible className="space-y-4">
 
 
