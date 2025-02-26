@@ -27,6 +27,8 @@ className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:tex
             An award-winning genomics app with advanced encryption and blind computation technology.
           </p>
 
+          <p className='text-stone-600  text-sm mt-4'>Available soon on Apple iOS devices</p>
+
           {/* Email Signup 
           <div className="mb-4">
           

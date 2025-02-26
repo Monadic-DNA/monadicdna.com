@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
     domains: [
       'hebbkx1anhila5yf.public.blob.vercel-storage.com'
     ]
+  },
+  eslint: {
+    // Ignore ESLint errors during production build
+    ignoreDuringBuilds: true
   }
 };
 

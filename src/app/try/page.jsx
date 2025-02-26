@@ -47,6 +47,7 @@ export default function CustomShapes() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
+      {/*
       {shapes.map((shape, index) => (
         <CustomShape
           key={index}
@@ -55,6 +56,7 @@ export default function CustomShapes() {
           className={`${shape.className} transition-all duration-500 ease-in-out hover:scale-110`}
         />
       ))}
+        */}
     </div>
   );
 }

@@ -2,8 +2,9 @@ export default function SecurityPage(){
     return(
         <main>
 
-     
+         {/*
     <div >
+      
       <section
         id="securityOverview"
         className="bg-neutral-900 pt-24 min-h-[70vh]"
@@ -297,6 +298,7 @@ export default function SecurityPage(){
         </div>
       </section>
     </div>
+    */}
     </main>
 
     )

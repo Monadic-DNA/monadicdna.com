@@ -1,6 +1,7 @@
 export default function PressPage(){
     return(
         <main>
+          {/*
   <div >
     <section id="pressCenter" className="bg-neutral-900 pt-24 min-h-[70vh]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -404,7 +405,7 @@ export default function PressPage(){
       </div>
     </section>
   </div>
-
+  */}
   </main>
     )
 }

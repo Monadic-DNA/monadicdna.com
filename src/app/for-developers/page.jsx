@@ -1,9 +1,7 @@
 export default function ForDevelopersPage(){
     return(
    <main>
-
-  
-
+    {/*
   <div id="developers">
     <section
       id="developerHero"
@@ -365,6 +363,7 @@ export default function ForDevelopersPage(){
       </div>
     </section>
   </div>
+  */}
   </main>
     )
 }
