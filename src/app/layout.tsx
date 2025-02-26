@@ -17,8 +17,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Monadic DNA",
-  description: "DNA insights with privacy, autonomy, and boundless curiosity",
+  title: "Monadic DNA | Personal DNA insights with privacy, autonomy, and boundless curiosity",
+  description: "An award-winning genomics app built with advanced encryption and blind computation technology. Learn from your DNA while your data remains private, protected, and entirely in your hands.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

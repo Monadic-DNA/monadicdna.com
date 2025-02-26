@@ -23,7 +23,7 @@ const NavbarMobile = () => {
 
   return (
     <>
-      <nav className="fixed w-full z-50 bg-white border-b border-gray-800 md:hidden">
+      <nav className="fixed w-full z-50 bg-white border-b border-gray-300 md:hidden">
         <div className="mx-auto flex h-16 w-full max-w-[1440px] items-center justify-between px-5">
           <Link href="/">
             <img className="h-10 w-auto" src="/images/logo.png" alt="logo" />

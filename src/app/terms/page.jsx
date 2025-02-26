@@ -1,6 +1,7 @@
 export default function TermsOfService() {
     return (
       <div className="min-h-screen font-poppins pt-24">
+        {/*
         <header className="bg-offWhite shadow-sm">
           <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-semibold font-bricolage text-absoluteDark">Terms of Service</h1>
@@ -68,6 +69,7 @@ export default function TermsOfService() {
             </div>
           </div>
         </main>
+        */}
       </div>
     )
   }

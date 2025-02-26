@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { cn } from "@/lib/utils"
-import { ElementType, ComponentPropsWithoutRef } from "react"
+import { cn } from "@/lib/utils";
+import { ComponentPropsWithoutRef, ElementType } from "react";
 
 interface StarBorderProps<T extends ElementType> {
   as?: T
@@ -18,8 +18,8 @@ export function StarBorder<T extends ElementType = "button">({
   children,
   ...props
 }: StarBorderProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof StarBorderProps<T>>) {
-  const Component = as || "button"
-  const defaultColor = color || "hsl(var(--foreground))"
+  const Component = as || "button";
+  const defaultColor = color || "hsl(var(--foreground))";
 
   return (
     <Component 
@@ -57,5 +57,5 @@ export function StarBorder<T extends ElementType = "button">({
         {children}
       </div>
     </Component>
-  )
+  );
 }

@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full z-50 bg-white border-b border-gray-800">
+      <nav className="fixed w-full z-50 bg-white border-b border-gray-300">
         <AnnouncementHeader />
         <div className="mx-auto flex h-16 md:h-20 w-full max-w-[1440px] items-center justify-between px-5 ">
           <Link href="/">

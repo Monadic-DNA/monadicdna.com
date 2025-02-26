@@ -1,85 +1,85 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useEffect, useRef, useState, useCallback } from "react"
+import Link from "next/link";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export default function WhyUs() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const [paths, setPaths] = useState<string[]>([])
-  const [activeBoxes, setActiveBoxes] = useState<boolean[]>([])
-  const [activeCard, setActiveCard] = useState<number | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [paths, setPaths] = useState<string[]>([]);
+  const [activeBoxes, setActiveBoxes] = useState<boolean[]>([]);
+  const [activeCard, setActiveCard] = useState<number | null>(null);
 
   const calculatePaths = useCallback(() => {
-    if (!containerRef.current) return
+    if (!containerRef.current) return;
 
-    const boxes = containerRef.current.querySelectorAll<HTMLElement>(".content-box")
-    const newPaths: string[] = []
-    const containerRect = containerRef.current.getBoundingClientRect()
-    const isMobile = window.innerWidth < 768 // md breakpoint
+    const boxes = containerRef.current.querySelectorAll<HTMLElement>(".content-box");
+    const newPaths: string[] = [];
+    const containerRect = containerRef.current.getBoundingClientRect();
+    const isMobile = window.innerWidth < 768; // md breakpoint
 
     for (let i = 0; i < boxes.length - 1; i++) {
-      const start = boxes[i].getBoundingClientRect()
-      const end = boxes[i + 1].getBoundingClientRect()
+      const start = boxes[i].getBoundingClientRect();
+      const end = boxes[i + 1].getBoundingClientRect();
 
       if (isMobile) {
         // Mobile: Vertical lines down the center
-        const centerX = containerRect.width / 2
-        const x1 = centerX
-        const y1 = start.bottom - containerRect.top
-        const y2 = end.top - containerRect.top
-        newPaths.push(`M ${x1} ${y1} V ${y2}`)
+        const centerX = containerRect.width / 2;
+        const x1 = centerX;
+        const y1 = start.bottom - containerRect.top;
+        const y2 = end.top - containerRect.top;
+        newPaths.push(`M ${x1} ${y1} V ${y2}`);
       } else {
         // Desktop: Zigzag pattern
-        const x1 = i % 2 === 0 ? start.right - containerRect.left : start.left - containerRect.left
-        const y1 = start.top - containerRect.top + start.height / 2
-        const x2 = end.left - containerRect.left + (i % 2 === 0 ? end.width / 2 : end.width / 2)
-        const y2 = end.top - containerRect.top
-        newPaths.push(`M ${x1} ${y1} H ${x2} V ${y2}`)
+        const x1 = i % 2 === 0 ? start.right - containerRect.left : start.left - containerRect.left;
+        const y1 = start.top - containerRect.top + start.height / 2;
+        const x2 = end.left - containerRect.left + (i % 2 === 0 ? end.width / 2 : end.width / 2);
+        const y2 = end.top - containerRect.top;
+        newPaths.push(`M ${x1} ${y1} H ${x2} V ${y2}`);
       }
     }
 
-    setPaths(newPaths)
-  }, [])
+    setPaths(newPaths);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
-      requestAnimationFrame(calculatePaths)
-    }
+      requestAnimationFrame(calculatePaths);
+    };
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const index = Array.from(containerRef.current?.querySelectorAll(".content-box") || []).indexOf(
             entry.target as HTMLElement,
-          )
+          );
           setActiveBoxes((prev) => {
-            const newActiveBoxes = [...prev]
-            newActiveBoxes[index] = entry.isIntersecting
-            return newActiveBoxes
-          })
+            const newActiveBoxes = [...prev];
+            newActiveBoxes[index] = entry.isIntersecting;
+            return newActiveBoxes;
+          });
           if (entry.isIntersecting) {
-            setActiveCard(index)
+            setActiveCard(index);
           }
-        })
+        });
       },
       { threshold: 0.5 },
-    )
+    );
 
     if (containerRef.current) {
       containerRef.current.querySelectorAll(".content-box").forEach((box) => {
-        observer.observe(box)
-      })
+        observer.observe(box);
+      });
     }
 
-    handleResize()
-    window.addEventListener("resize", handleResize)
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize)
-      observer.disconnect()
-    }
-  }, [calculatePaths])
+      window.removeEventListener("resize", handleResize);
+      observer.disconnect();
+    };
+  }, [calculatePaths]);
 
   return (
     <div id="about" className="bg-[#1a1a1a]">
@@ -93,7 +93,7 @@ export default function WhyUs() {
         <div className="space-y-8 md:space-y-32">
           {[
             {
-              title: "We safeguard passwords and bank PINs, but the value of DNA is unmatched.",
+              title: "Value of your DNA is unmatched.",
               content: [
                 "A stolen password might cost you money, but compromised DNA data can affect your life, health, and privacy forever.",
                 "Passwords can be reset but your DNA cannot.",
@@ -102,7 +102,7 @@ export default function WhyUs() {
             {
               title: "The status quo isn't working.",
               content: [
-                "Existing DNA companies have been facing security breaches that lock people out of accessing their own data. Some are even struggling financially which puts this extremely sensitive data at risk of being sold without your consent.",
+                "Traditional DNA companies are failing to protect what matters most — your data. Security breaches and financial struggles put this sensitive data at risk of being sold without proper consent. It's time for a better way — one where you stay in control.",
                 <Link
                   key="link"
                   href="https://www.bitdefender.com/en-us/blog/hotforsecurity/millions-of-new-23andme-genetic-data-profiles-leak-on-cybercrime-forum"
@@ -114,18 +114,18 @@ export default function WhyUs() {
               ],
             },
             {
-              title: "Monadic DNA is a secure safe that only you have the keys to access.",
+              title: "Monadic DNA is a secure Vault that only you have the keys to access.",
               content: [
-                "Privacy and security are fundamentally built into our app design from the ground up",
-                "Monadic is using the latest in blind computation technology which means, we cannot sell your data, share it, or even access it.",
-                "You can delete your data at any time.",
+                "Privacy and security are fundamentally built into our app design from the ground up. It's in our DNA.",
+                "We are using the latest in blind computation technology. Your DNA file is encrypted using a private key only you can access. Which means, even we cannot access your raw unecrypted DNA data.",
+                "You can delete your data at any time, right from the app. No hoops to jump through.",
               ],
               isList: true,
             },
             {
               title: "Get sequenced once, use it everywhere",
               content: [
-                "Upload your raw DNA data, and it gets encrypted and stored in your Monadic vault. You can use this shielded data with apps in the Monadic app store.",
+                "Upload your raw DNA data, and it gets encrypted and stored in your Monadic DNA Vault. You can use this shielded data with apps in the Monadic DNA app store.",
                 "This approach is a shift towards a new, trustworthy and security-conscious way of handling sensitive data made possible by blind computation technology. Your DNA data stays completely private at every step. Even when analysis is being done!",
                 'We\'re creating an open-ecosystem that evolves alongside the breakthroughs in genomic science by inviting providers with diverse specialties to offer DNA insights. Whether you want to see if you have the "cilantro tastes like soap" gene or navigate the risks for inherited diseases with your doctor, we want to make sure this is done right with autonomy and privacy at every step of the process.',
               ],
@@ -168,6 +168,6 @@ export default function WhyUs() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 

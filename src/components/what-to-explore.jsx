@@ -69,7 +69,7 @@ export default function WhatToExplore() {
       question: "Are you more likely to be a coffee lover or hater?",
       gradient: "from-[#FCFFD7] to-[#EAF9FF]",
       colors: { start: '#DDE4FF', end: '#EAF9FF' },
-      imageUrl: "./images/img10.png"
+      imageUrl: "./images/key-illustration.png"
     }
   ];
 

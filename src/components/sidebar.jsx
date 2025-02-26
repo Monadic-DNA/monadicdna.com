@@ -14,17 +14,15 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           </button>
         </div>
         <div className="flex flex-col gap-4 gap-y-3 p-5">
-          <Link href="/#about" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
+          <Link href="/#about" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
             About
           </Link>
-          <Link href="/faq" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
+          <Link href="/#faq" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
             FAQ
-          </Link>
-          <Link href="/terms" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
-            Terms & Conditions
-          </Link>
-          <Link href="/privacy" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black">
-            Privacy Policy
           </Link>
         </div>
       </div>

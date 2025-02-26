@@ -1,34 +1,33 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-
+import { AnnouncementBar } from '@/components/announcement-bar'
 export default function Hero() {
   return (
-    <div className=" bg-white">
+    <div className="">
      
 
       {/* Hero Section */}
-      <main className="px-6 pt-16 md:pt-16  lg:px-8">
+      <main className="px-6 pt-24 md:pt-8 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           {/* Launch Banner */}
        
-
+          <AnnouncementBar/>
 
           {/* Main Heading */}
-          <h1 className="mb-6  text-2xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight ">
+          <h1 className="mb-6  text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight ">
             DNA insights with privacy, autonomy, and boundless curiosity
           </h1>
 
           {/* Subheading */}
           <p className="hidden md:block
           md:mb-8 text-balance mb-6 max-w-5xl sm:text-xl text-base leading-relaxed text-black">
-            A genomics app build with award-winning privacy technology. Learn about your DNA while your data remains private, protected, and entirely in your hands.
+            An award-winning genomics app built with advanced encryption and blind computation technology. Learn from your DNA while your data remains private, protected, and entirely in your hands.
           </p>
 
-<p
-className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:text-base  leading-relaxed text-[#232323]">
-'>A genomics app with award-winning privacy—explore your DNA while keeping full control of your data.</p>
+          <p
+className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:text-base  leading-relaxed text-[#232323]'>
+            An award-winning genomics app with advanced encryption and blind computation technology.
+          </p>
 
-          {/* Email Signup */}
+          {/* Email Signup 
           <div className="mb-4">
           
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -44,13 +43,15 @@ className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:tex
                 Join the waitlist
               </Button>
             </div>
-            <p className='md:hidden text-stone-600  text-sm mt-4'>Available soon on ios and android</p>
+            
+            <p className='md:hidden text-stone-600  text-sm mt-4'>Available soon on iOS devices</p>
           </div>
           <p className="hidden md:block mb-4  text-sm text-[#7E7E7E]">
               Stay in the loop! Early users get access to exclusive insights that won't be available later.
             </p>
-        
+        */}
         </div>
+        
       </main>
     </div>
   )

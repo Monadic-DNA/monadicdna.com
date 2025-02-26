@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const NavbarDesktop = () => {
   return (
-    <nav className=" w-full bg-white border-gray-800 hidden md:block">
+    <nav className=" w-full border-gray-800 hidden md:block">
       <div className="mx-auto flex h-20 w-full max-w-[1440px] items-center justify-between px-5">
         <Link href="/">
           <img className="h-14 w-auto" src="/images/logo.png" alt="logo" />

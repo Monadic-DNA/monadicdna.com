@@ -6,7 +6,7 @@ export default function DNASecurity() {
         {/* Content Section */}
         <div className="max-w-xl">
           <h1 className="text-2xl sm:text-4xl md:text-3xl font-black leading-tight mb-6 sm:mb-8">
-            Blind computation technology keeps DNA data secure
+            Blind computation technology keeps your DNA secure
           </h1>
 
           <div className="space-y-4 sm:space-y-6 text-base sm:text-lg mb-8">
@@ -21,19 +21,9 @@ export default function DNASecurity() {
             </p>
 
             <p>
-              With FHE, your DNA data stays encrypted even when it's being analyzed for insights. It's like solving a
-              puzzle without opening the box.
-            </p>
-
-            <p>
-              MPC ensures that you don't have to be dependent on us to store or secure your data. Don't like what we
-              offer? You can easily take your data elsewhere!
+            With FHE, your DNA data remains encrypted even while being analyzed for insights. Imagine solving a puzzle without ever seeing the pieces. Or cracking a Rubik's cube blindfolded. Or sculpting without sight, yet still achieving precision. You get the idea. Your DNA data stays private and secure, always. Even during computation.
             </p>
           </div>
-
-          <button className="inline-flex px-6 py-3 border-2 border-black hover:bg-black hover:text-white transition-colors duration-200 font-medium text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
-            Learn More
-          </button>
         </div>
 
         {/* Image Section */}

@@ -199,8 +199,7 @@ export default function FAQPage() {
                 Will my data be shared with third parties?
                 </AccordionTrigger>
                 <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-                No, your DNA data stays completely private. Even when your data is processed on the Cloud, it remains encrypted and nobody is able to look at it in raw form. As a policy, we do not sell or sell your raw data to anyone and do not have direct access to it ourselves. Your encrypted DNA file and any insights generated are only accessible to you. If you want, you can choose to share data, specific insights, or reports with others in the MonadicDNA marketplace, but that decision is entirely up to you. Privacy and security aren’t just features — they’re the foundation of how MonadicDNA is designed to work.
-              
+                No, your DNA data stays completely private. Even when your data is processed on the Cloud, it remains encrypted and nobody is able to look at it in raw form. As policy, we will not sell your raw data to anyone and do not have direct access to it ourselves. Your encrypted DNA file and any insights generated are only accessible to you. If you want, you can choose to share data, specific insights, or reports with others in the Monadic DNA marketplace, but that decision is entirely up to you. Privacy and security aren’t just features — they’re the foundation of how Monadic DNA is designed to work.
                 </AccordionContent>
               </AccordionItem>
 
@@ -287,16 +286,6 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
               <hr />
               <AccordionItem value="item-6" className="border-none">
                 <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
-                How do I register a sample collection kit with my account?
-                </AccordionTrigger>
-                <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
-              
-                </AccordionContent>
-              </AccordionItem>
-
-              <hr />
-              <AccordionItem value="item-6" className="border-none">
-                <AccordionTrigger className="text-base text-left md:text-xl text-darkMain hover:text-[#555555] transition-all duration-300  font-medium hover:no-underline">
                 What features work offline vs. requiring Cloud connectivity?
                 </AccordionTrigger>
                 <AccordionContent className="text-[16px] text-left text-[#4B5563] leading-[1.6]">
@@ -309,6 +298,7 @@ When DNA data is uploaded, it is encrypted and securely stored in the MonadicDNA
             </Accordion>
           </div>
 
+          {/*
           <h1 className="text-3xl font-bold  text-center mb-12 mt-24">MonadicDNA Test Kit FAQs </h1>
 
           <div className="border-[0.5px] rounded-2xl border-darkMain py-12 px-6  md:py-16 md:px-20 lg:px-24">
@@ -373,7 +363,7 @@ Before you send your saliva sample back, make sure to register your kit in the M
 
             </Accordion>
           </div>
-
+          */}
         </div>
       </div>
     </div>

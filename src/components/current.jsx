@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* Bottom Section */}
           <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
-            <p className="text-base">©2024 Monadic Health</p>
+            <p className="text-base">©2025 Monadic Health</p>
             <div className="flex gap-6">
               <Link href="/terms" className="hover:text-gray-300">
                 Terms of Service
