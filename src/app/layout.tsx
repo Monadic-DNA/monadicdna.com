@@ -16,7 +16,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export async function generateMetadata({ params }): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
                  (process.env.NODE_ENV === 'production' ? 'https://monadicdna.com' : 'http://localhost:3000');
   
