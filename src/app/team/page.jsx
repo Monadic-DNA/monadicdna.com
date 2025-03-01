@@ -71,8 +71,8 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 pt-12 md:pt-16 pb-16 relative">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+      <div className="container mx-auto px-4 pt-24 md:pt-16 pb-12 relative">
+        <div className="max-w-4xl mx-auto text-center mb-10">
           <h1 className="text-5xl font-bold mb-6 text-gray-900">
             Meet Our Team
           </h1>
@@ -84,7 +84,7 @@ export default function TeamPage() {
         {/* Content Container with max-width */}
         <div className="max-w-[900px] mx-auto">
           {/* Founders Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {founders.map((founder, index) => (
               <div 
                 key={index} 
@@ -152,7 +152,7 @@ export default function TeamPage() {
           </div>
 
           {/* Team Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
             {teamMembers.map((member, index) => (
               <div 
                 key={index} 
