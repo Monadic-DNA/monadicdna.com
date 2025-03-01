@@ -238,13 +238,13 @@ export default function Footer() {
             {/* Right Section */}
             <div className="grid grid-cols-2 gap-x-16 gap-y-4">
               <div className="space-y-4">
-                <Link href="#about" className="block hover:text-gray-300">
+                <Link href="/#about" className="block hover:text-gray-300">
                   About
                 </Link>
                 <Link href="/team" className="block hover:text-gray-300">
                   Team
                 </Link>
-                <Link href="#faq" className="block hover:text-gray-300">
+                <Link href="/#faq" className="block hover:text-gray-300">
                   FAQ
                 </Link>
               </div>
