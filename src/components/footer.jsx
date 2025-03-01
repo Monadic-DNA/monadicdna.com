@@ -241,7 +241,7 @@ export default function Footer() {
                 <Link href="#about" className="block hover:text-gray-300">
                   About
                 </Link>
-                <Link href="#" className="block hover:text-gray-300">
+                <Link href="/team" className="block hover:text-gray-300">
                   Team
                 </Link>
                 <Link href="#faq" className="block hover:text-gray-300">
