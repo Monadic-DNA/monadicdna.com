@@ -24,6 +24,11 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           }}>
             FAQ
           </Link>
+          <Link href="/team" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Team
+          </Link>
         </div>
       </div>
 

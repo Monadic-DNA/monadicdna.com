@@ -24,6 +24,9 @@ export default function Footer() {
             <Link href="/#faq" className="text-white hover:text-gray-300">
               FAQ
             </Link>
+            <Link href="/team" className="text-white hover:text-gray-300">
+              Team
+            </Link>
        
             <Link href="/terms" className="text-white hover:text-gray-300">
               Terms of Service
