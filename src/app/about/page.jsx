@@ -2,7 +2,7 @@
 export default function AboutPage() {
   return (
     <main>
-
+      {/*
 <>
   <div >
     <section id="hero" className="bg-neutral-900 min-h-[70vh] pt-20">
@@ -438,7 +438,7 @@ export default function AboutPage() {
     </div>
   
 </>
-
+*/}
     </main>
   )
 }
