@@ -49,7 +49,7 @@ export default function ForDevelopersPage(){
           </div>
           <div className="lg:block hidden animate__animated animate__fadeInRight">
             <img
-              src="https://monadic-v0.vercel.app/images/illsutration.svg"
+              src="/images/illsutration.svg"
               alt="DNA Analysis Illustration"
               className="w-full max-w-lg mx-auto transition-opacity duration-300 opacity-100"
               width={500}
