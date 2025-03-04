@@ -261,7 +261,7 @@ export default function PressPage() {
                           <img src="/images/press/awards/risc.png" alt="RISC Zero Logo" className="h-8 w-8 object-contain" />
                         </div>
                         <div>
-                          <h5 className="text-lg font-semibold text-gray-900">RISC Zero - Best zkVM Application</h5>
+                          <h5 className="text-lg font-semibold text-gray-900">RISC Zero - Best zkVM App</h5>
                           <p className="text-gray-600 text-sm">Scaling Ethereum 2024</p>
                         </div>
                       </div>
