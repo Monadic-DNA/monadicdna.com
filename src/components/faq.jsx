@@ -1,13 +1,11 @@
 "use client"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-
+import Link from "next/link"
 export default function FAQ() {
   return (
     <div id="faq" className="bg-[#FFFFFB]">
-
-
-   
+      
     <div className="w-full  max-w-3xl mx-auto px-6 md:px-4 py-24 md:pt-24 md:pb-32">
       <h1 className="text-3xl font-bold  text-center mb-12">FAQ</h1>
 
@@ -81,14 +79,14 @@ export default function FAQ() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </div>
 
-      {/* <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-12">
         <Link href={"/faq"} variant="outline" className="h-12 px-8 text-sm flex justify-center items-center font-bold border border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-all duration-300 bg-transparent rounded-none">
-          See More
+          More FAQs
         </Link>
       </div>
-      */ }
+    
+      </div>
     </div>
     </div>
   )

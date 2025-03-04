@@ -34,7 +34,7 @@ const NavPill = () => {
         <Link href="/#about" className="text-base leading-6 text-black hover:text-gray-700 transition-colors duration-300">
               About
             </Link>
-            <Link href="/#faq" className="text-base leading-6 text-black hover:text-gray-700 transition-colors duration-300">
+            <Link href="/faq" className="text-base leading-6 text-black hover:text-gray-700 transition-colors duration-300">
               FAQ
             </Link>
         </div>

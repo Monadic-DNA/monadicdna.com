@@ -1,9 +1,9 @@
 "use client"
 
-import * as React from "react"
-import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { Plus, Minus } from "lucide-react"
 import { cn } from "@/lib/utils"
+import * as AccordionPrimitive from "@radix-ui/react-accordion"
+import { Minus, Plus } from "lucide-react"
+import * as React from "react"
 
 const Accordion = AccordionPrimitive.Root
 
@@ -27,15 +27,15 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline",
+        "group flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline",
         className
       )}
       {...props}
     >
       {children}
-      <span className="ml-2">
-        <Plus className="h-4 w-4 shrink-0 block transition-transform duration-200 data-[state=open]:hidden" />
-        <Minus className="h-4 w-4 shrink-0 hidden transition-transform duration-200 data-[state=open]:block" />
+      <span className="ml-2 transition-transform duration-200 group-data-[state=open]:rotate-180">
+        <Plus className="h-4 w-4 shrink-0 group-data-[state=closed]:block group-data-[state=open]:hidden" />
+        <Minus className="h-4 w-4 shrink-0 group-data-[state=closed]:hidden group-data-[state=open]:block" />
       </span>
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
@@ -56,4 +56,4 @@ const AccordionContent = React.forwardRef<
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
+export { Accordion, AccordionContent, AccordionItem, AccordionTrigger }

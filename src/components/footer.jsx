@@ -20,7 +20,7 @@ export default function Footer() {
             <Link href="/#about" className="text-white hover:text-gray-300">
               About
             </Link>
-            <Link href="/#faq" className="text-white hover:text-gray-300">
+            <Link href="/faq" className="text-white hover:text-gray-300">
               FAQ
             </Link>
             <Link href="/team" className="text-white hover:text-gray-300">
@@ -247,7 +247,7 @@ export default function Footer() {
                 <Link href="/team" className="block hover:text-gray-300">
                   Team
                 </Link>
-                <Link href="/#faq" className="block hover:text-gray-300">
+                <Link href="/faq" className="block hover:text-gray-300">
                   FAQ
                 </Link>
                 <Link href="/press" className="block hover:text-gray-300">

@@ -13,7 +13,7 @@ const NavbarDesktop = () => {
           <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
             About
           </Link>
-          <Link href="/#faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+          <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
             FAQ
           </Link>
         </div>
