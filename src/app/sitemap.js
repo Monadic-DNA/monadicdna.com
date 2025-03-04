@@ -45,6 +45,11 @@ export default async function sitemap() {
       priority: 0.7,
       changeFrequency: 'daily',
     },
+    {
+      route: '/press',
+      priority: 0.7,
+      changeFrequency: 'daily',
+    },
   ];
   
   // Create sitemap entries with actual last modified dates

@@ -2,15 +2,14 @@
 
 import Link from "next/link";
 
-export default function Footer() {
-
+export default function Footer() {  
   return (
     <footer
       className="bg-[#0D0C0C] font-inter text-white py-12 px-4 md:px-12 ">
       <div className="max-w-7xl mx-auto">
         {/* Mobile Layout */}
         <div className="md:hidden">
-          <Link href="/" >
+          <Link href="/">
             <img 
               src="/images/MonadicDNA-logo-dark-text.svg" 
               alt="Monadic Health"
@@ -27,7 +26,9 @@ export default function Footer() {
             <Link href="/team" className="text-white hover:text-gray-300">
               Team
             </Link>
-       
+            <Link href="/press" className="text-white hover:text-gray-300">
+              Press
+            </Link>
             <Link href="/terms" className="text-white hover:text-gray-300">
               Terms of Service
             </Link>
@@ -136,8 +137,7 @@ export default function Footer() {
           <div className="flex justify-between items-start">
             {/* Left Section */}
             <div className="space-y-8">
-
-              <Link href="/" >
+              <Link href="/">
                 <img 
                   src="/images/MonadicDNA-logo-dark-text.svg" 
                   alt="Monadic Health"
@@ -249,6 +249,9 @@ export default function Footer() {
                 </Link>
                 <Link href="/#faq" className="block hover:text-gray-300">
                   FAQ
+                </Link>
+                <Link href="/press" className="block hover:text-gray-300">
+                  Press
                 </Link>
               </div>
       
