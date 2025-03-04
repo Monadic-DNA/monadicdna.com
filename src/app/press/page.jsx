@@ -207,7 +207,7 @@ export default function PressPage() {
                     </div>
                     <p className="text-sm text-gray-500">Email</p>
                     <p className="font-medium text-gray-800">
-                      <a href="mailto:jay@monadicdna.com" className="text-[#D782BA] hover:text-[#C671A9]">jay@monadicdna.com</a>
+                      <a href="mailto:press@monadicdna.com" className="text-[#D782BA] hover:text-[#C671A9]">press@monadicdna.com</a>
                     </p>
                   </div>
                 </div>

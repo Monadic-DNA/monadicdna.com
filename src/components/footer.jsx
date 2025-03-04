@@ -84,7 +84,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="mailto:jay@monadicdna.com"
+              href="mailto:hello@monadicdna.com"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
@@ -191,7 +191,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                   href="mailto:jay@monadicdna.com"
+                   href="mailto:hello@monadicdna.com"
                    target="_blank"
                    rel="noopener noreferrer"
                   className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
