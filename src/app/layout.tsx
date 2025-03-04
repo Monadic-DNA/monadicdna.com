@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import NavPill from "@/components/nav-pill";
 import NavbarDesktop from "@/components/navbar-desktop";
 import NavbarMobile from "@/components/navbar-mobile";
@@ -49,6 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body
         className={`${unbounded.variable} ${inter.variable} antialiased`}
       >
