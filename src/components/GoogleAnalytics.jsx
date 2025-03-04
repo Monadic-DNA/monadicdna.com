@@ -14,9 +14,7 @@ export default function GoogleAnalytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-CBDB53XG10', {
-            debug_mode: true
-          });
+          gtag('config', 'G-CBDB53XG10');
         `}
       </Script>
     </>
