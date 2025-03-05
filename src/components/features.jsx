@@ -37,7 +37,7 @@ export default function Features() {
         <img className="w-22 max-h-[90px] inline-block" src="/images/features/third-feature.svg" alt="You are in Control" />
       </div>
       <h3 className="font-black text-center text-white flex items-center justify-center">You are in control, always.</h3>
-      <p className="text-white text-center">Privacy and security are built into Monadic DNA's design and ethos from the ground up.</p>
+      <p className="text-white text-center">because privacy and security are built into Monadic DNA's design and ethos from the ground up.</p>
     </div>
 
   </div>

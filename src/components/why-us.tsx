@@ -93,7 +93,7 @@ export default function WhyUs() {
         <div className="space-y-8 md:space-y-32">
           {[
             {
-              title: "Value of your DNA is unmatched.",
+              title: "The value of your DNA is unmatched.",
               content: [
                 "A stolen password might cost you money, but compromised DNA data can affect your life, health, and privacy forever.",
                 "Passwords can be reset but your DNA cannot.",
@@ -114,7 +114,7 @@ export default function WhyUs() {
               ],
             },
             {
-              title: "Monadic DNA is a secure Vault that only you have the keys to access.",
+              title: "Monadic DNA is a secure vault that only you have the keys to access.",
               content: [
                 "Privacy and security are fundamentally built into our app design from the ground up. It's in our DNA.",
                 "We are using the latest in blind computation technology. Your DNA file is encrypted using a private key only you can access. Which means, even we cannot access your raw unecrypted DNA data.",
@@ -123,9 +123,9 @@ export default function WhyUs() {
               isList: true,
             },
             {
-              title: "Get sequenced once, use it everywhere",
+              title: "Get sequenced once, use it everywhere.",
               content: [
-                "Upload your raw DNA data, and it gets encrypted and stored in your Monadic DNA Vault. You can use this shielded data with apps in the Monadic DNA app store.",
+                "Upload your raw DNA data, and it gets encrypted and stored in your Monadic DNA vault. You can use this shielded data with apps in the Monadic DNA app store.",
                 "This approach is a shift towards a new, trustworthy and security-conscious way of handling sensitive data made possible by blind computation technology. Your DNA data stays completely private at every step. Even when analysis is being done!",
                 'We\'re creating an open-ecosystem that evolves alongside the breakthroughs in genomic science by inviting providers with diverse specialties to offer DNA insights. Whether you want to see if you have the "cilantro tastes like soap" gene or navigate the risks for inherited diseases with your doctor, we want to make sure this is done right with autonomy and privacy at every step of the process.',
               ],

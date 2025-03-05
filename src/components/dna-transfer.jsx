@@ -18,7 +18,7 @@ export default function DnaTransferSection() {
             </div>
 
             <p className="text-base text-gray-300 leading-snug ">
-            You can export your genetic data from services like 23andMe or Ancestry DNA and store it securely in a secure Vault where you have full control. With advanced privacy measures, your data stays protected and accessible only to you.
+            You can export your genetic data from services like 23andMe or Ancestry DNA and store it securely in a secure vault where you have full control. With advanced privacy measures, your data stays protected and accessible only to you.
             </p>
             <p className="md:hidden fle">Early users get access to insights that won’t be available later!</p>
 
