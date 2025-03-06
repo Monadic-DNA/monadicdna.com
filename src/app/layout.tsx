@@ -38,7 +38,28 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: 'Monadic DNA',
     },
     icons: {
-      icon: "/favicon.ico",
+      icon: [
+        {
+          url: '/favicon.ico',
+          media: '(prefers-color-scheme: light)',
+        },
+        {
+          url: '/favicon-dark.ico',
+          media: '(prefers-color-scheme: dark)',
+        },
+        {
+          url: '/favicon-96x96.png',
+          media: '(prefers-color-scheme: light)',
+          sizes: '96x96',
+          type: 'image/png',
+        },
+        {
+          url: '/favicon-96x96-dark.png',
+          media: '(prefers-color-scheme: dark)',
+          sizes: '96x96',
+          type: 'image/png',
+        }
+      ],
     },
     verification: {
       google: 'wBCKypAAtTIQVriud5mF0WdXmLr-vbduTBYX0ZW9bVI',
