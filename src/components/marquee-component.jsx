@@ -104,87 +104,84 @@ const row3Cards = [
 
 export function MarqueeDemo() {
   return (
-    <div className="relative bg-[#FBFBFB] flex py-24 w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-x-xl">
+    <div className="relative bg-[#FBFBFB] flex py-24 w-full flex-col items-center justify-center overflow-hidden border bg-background md:shadow-x-xl">
     
-    <h2 className="max-w-xl mb-16 font-black mt-12 text-center text-4xl">Get insights you can actually use to improve your life</h2>
-    <Marquee pauseOnHover className="[--duration:50s]">
-    {[...row1Cards, ...row1Cards].map((card, index) => (
+      <h2 className="max-w-xl mb-16 font-black mt-12 text-center text-4xl">Get insights you can actually use to improve your life</h2>
+      
+      {/* Wrap marquees in a container */}
+      <div className="relative w-full">
+        <Marquee pauseOnHover className="[--duration:50s]">
+          {[...row1Cards, ...row1Cards].map((card, index) => (
+            <div
+              key={`${card.id}-${index}`}
+              className="flex-none max-w-fit"
+            >
+              <div className={`rounded-3xl border border-black px-3 py-2 flex flex-row justify-center gap-y-0 h-max-fit`}>
+                <div className="aspect-square  flex items-center justify-center">
+                  <CustomShape 
+                    startColor={card.colors.start}
+                    endColor={card.colors.end}
+                    imageUrl={card.imageUrl}
+                    className="w-10 mr-2 h-auto"
+                  />
+                </div>
+                <p className={`font-unbounded h-10 sm:h-12 flex justify-center items-center rounded-2xl border border-black px-3 py-2.5 bg-gradient-to-tr bg-gradient-to-br ${card.gradient}  text-[9px] sm:text-xs text-center font-medium`}>
+                  {card.question}
+                </p>
+              </div>
+            </div>
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover className="[--duration:50s]">
+          {[...row2Cards, ...row2Cards].map((card, index) => (
+            <div
+              key={`${card.id}-${index}`}
+              className="flex-none max-w-fit"
+            >
+              <div className={`rounded-3xl border border-black px-3 py-2 flex flex-row justify-center gap-y-0 h-max-fit`}>
+                <div className="aspect-square  flex items-center justify-center">
+                  <CustomShape 
+                    startColor={card.colors.start}
+                    endColor={card.colors.end}
+                    imageUrl={card.imageUrl}
+                    className="w-10 mr-2 h-auto"
+                  />
+                </div>
+                <p className={`font-unbounded h-10 sm:h-12 flex justify-center items-center rounded-2xl border border-black px-3 py-2.5 bg-gradient-to-tr bg-gradient-to-br ${card.gradient} text-[9px] sm:text-xs text-center font-medium`}>
+                  {card.question}
+                </p>
+              </div>
+            </div>
+          ))}
+        </Marquee>
+        <Marquee pauseOnHover className="[--duration:50s]">
+          {[...row3Cards, ...row3Cards].map((card, index) => (
+            <div
+              key={`${card.id}-${index}`}
+              className="flex-none max-w-fit"
+            >
+              <div className={`rounded-3xl border border-black px-3 py-2 flex flex-row justify-center gap-y-0 h-max-fit`}>
+                <div className="aspect-square  flex items-center justify-center">
+                  <CustomShape 
+                    startColor={card.colors.start}
+                    endColor={card.colors.end}
+                    imageUrl={card.imageUrl}
+                    className="w-10 mr-2 h-auto"
+                  />
+                </div>
+                <p className={`font-unbounded h-10 sm:h-12 flex justify-center items-center rounded-2xl border border-black px-3 py-2.5 bg-gradient-to-tr bg-gradient-to-br ${card.gradient} text-[9px] sm:text-xs text-center font-medium`}>
+                  {card.question}
+                </p>
+              </div>
+            </div>
+          ))}
+        </Marquee>
 
-                      <div
-                        key={`${card.id}-${index}`}
-                        className="flex-none max-w-fit"
-                      >
-                        <div className={`rounded-3xl border border-black px-3 py-2 flex flex-row justify-center gap-y-0 h-max-fit`}>
-                          <div className="aspect-square  flex items-center justify-center">
-                            <CustomShape 
-                              startColor={card.colors.start}
-                              endColor={card.colors.end}
-                              imageUrl={card.imageUrl}
-                              className="w-10 mr-2 h-auto"
-                            />
-                          </div>
-                          <p className={`font-unbounded h-10 sm:h-12 flex justify-center items-center rounded-2xl border border-black px-3 py-2.5 bg-gradient-to-tr bg-gradient-to-br ${card.gradient}  text-[9px] sm:text-xs text-center font-medium`}>
-                            {card.question}
-                          </p>
-                        </div>
-                      </div>
-                      
-                    ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:50s]">
-      {[...row2Cards, ...row2Cards].map((card, index) => (
-                      <div
-                        key={`${card.id}-${index}`}
-                        className="flex-none max-w-fit"
-                      >
-                        <div className={`rounded-3xl border border-black px-3 py-2 flex flex-row justify-center gap-y-0 h-max-fit`}>
-                          <div className="aspect-square  flex items-center justify-center">
-                            <CustomShape 
-                              startColor={card.colors.start}
-                              endColor={card.colors.end}
-                              imageUrl={card.imageUrl}
-                              className="w-10 mr-2 h-auto"
-                            />
-                          </div>
-                          <p className={`font-unbounded h-10 sm:h-12 flex justify-center items-center rounded-2xl border border-black px-3 py-2.5 bg-gradient-to-tr bg-gradient-to-br ${card.gradient} text-[9px] sm:text-xs text-center font-medium`}>
-                            {card.question}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-      </Marquee>
-
-      <Marquee pauseOnHover className="[--duration:50s]">
-       
-
-         {[...row3Cards, ...row3Cards].map((card, index) => (
-                      <div
-                        key={`${card.id}-${index}`}
-                        className="flex-none max-w-fit"
-                      >
-                        <div className={`rounded-3xl border border-black px-3 py-2 flex flex-row justify-center gap-y-0 h-max-fit`}>
-                          <div className="aspect-square  flex items-center justify-center">
-                            <CustomShape 
-                              startColor={card.colors.start}
-                              endColor={card.colors.end}
-                              imageUrl={card.imageUrl}
-                              className="w-10 mr-2 h-auto"
-                            />
-                          </div>
-                          <p className={`font-unbounded h-10 sm:h-12 flex justify-center items-center rounded-2xl border border-black px-3 py-2.5 bg-gradient-to-tr bg-gradient-to-br ${card.gradient} text-[9px] sm:text-xs text-center font-medium`}>
-                            {card.question}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-
-      </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-[8%] sm:w-[10%] md:w-1/12 lg:w-1/12 bg-gradient-to-r from-white dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-[8%] sm:w-[10%] md:w-1/12 lg:w-1/12 bg-gradient-to-l from-white dark:from-background"></div>
+      </div>
 
       <p className="text-[#828282] mt-12 text-center">Choose from a continually growing library of apps and reports</p>
-      
-      {/* Responsive fade effect */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-[8%] sm:w-[10%] md:w-1/12 lg:w-1/12 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-[8%] sm:w-[10%] md:w-1/12 lg:w-1/12 bg-gradient-to-l from-white dark:from-background"></div>
     </div>
   );
 }
