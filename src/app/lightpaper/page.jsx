@@ -1,3 +1,4 @@
+import { getFullUrl } from '@/lib/utils';
 import React from 'react';
 
 export const metadata = {
@@ -5,13 +6,13 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: '/images/social/og-image-logo.png',
+        url: getFullUrl('/images/social/og-image-logo.png'),
         width: 1200,
         height: 630,
       },
     ],
   },
-}
+};
 
 export default function LightpaperPage() {
   return (
