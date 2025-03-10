@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       images: [
         {
-          url: `${baseUrl}/images/social/og-image-v1.png`,
+          url: `${baseUrl}/images/social/og-image-app.png`,
           width: 1200,
           height: 630,
         },

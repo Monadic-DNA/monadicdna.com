@@ -2,6 +2,15 @@ import React from 'react';
 
 export const metadata = {
   title: 'Lightpaper',
+  openGraph: {
+    images: [
+      {
+        url: '/images/social/og-image-logo.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 }
 
 export default function LightpaperPage() {
@@ -361,7 +370,17 @@ export default function LightpaperPage() {
               </p>
             </section>
 
-            <section className="mt-16 pt-8 border-t border-darkMain/10">
+            <div className="flex items-center justify-center my-16">
+              <div className="flex-grow h-px bg-gradient-to-r from-transparent via-[#af4a8c]/20 to-transparent" />
+              <img
+                src="/images/MonadicDNA-icon-sparkle-light.svg"
+                alt="Monadic DNA Icon"
+                className="mx-8 w-10 h-10"
+              />
+              <div className="flex-grow h-px bg-gradient-to-r from-transparent via-[#af4a8c]/20 to-transparent" />
+            </div>
+
+            <section>
               <h2 className="text-2xl font-bold mb-6 text-darkMain tracking-wider uppercase flex items-center before:content-['//'] before:mr-2 before:text-[#af4a8c]/70 before:font-mono">
                 References
               </h2>
