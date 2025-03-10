@@ -3,6 +3,7 @@ import React from 'react';
 
 export const metadata = {
   title: 'Lightpaper',
+  description: 'Open, Secure Genomics for All',
   openGraph: {
     images: [
       {
