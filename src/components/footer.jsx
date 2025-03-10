@@ -29,6 +29,9 @@ export default function Footer() {
             <Link href="/press" className="text-white hover:text-gray-300">
               Press
             </Link>
+            <Link href="/lightpaper" className="text-white hover:text-gray-300">
+              Lightpaper
+            </Link>
             <Link href="/terms" className="text-white hover:text-gray-300">
               Terms of Service
             </Link>
@@ -252,6 +255,9 @@ export default function Footer() {
                 </Link>
                 <Link href="/press" className="block hover:text-gray-300">
                   Press
+                </Link>
+                <Link href="/lightpaper" className="block hover:text-gray-300">
+                  Lightpaper
                 </Link>
               </div>
       

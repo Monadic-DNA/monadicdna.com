@@ -50,6 +50,11 @@ export default async function sitemap() {
       priority: 0.7,
       changeFrequency: 'daily',
     },
+    {
+      route: '/lightpaper',
+      priority: 0.9,
+      changeFrequency: 'weekly',
+    },
   ];
   
   // Create sitemap entries with actual last modified dates
