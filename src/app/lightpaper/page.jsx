@@ -230,7 +230,7 @@ export default function LightpaperPage() {
               </p>
               
               <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                In addition to decentralized trust, the DAO can also provide dynamic incentives to ecosystem players with $IKAI tokens. These include the usual allocations to app builders and ecosystem entrants of all kinds and community allocations to users and other participants. The DAO can also authorize token allocations to individual apps such as Monadic<sub>Pools</sub><sup><a href="#reference-6" id="ref-6" className="text-[#af4a8c]">[6]</a></sup> to sustain their growth by, say, rewarding the first 10,000 users or the users on various leaderboards.
+                In addition to decentralized trust, the DAO can also provide dynamic incentives to ecosystem players with $IKAI tokens. These include the usual allocations to app builders and ecosystem entrants of all kinds and community allocations to users and other participants. The DAO can also authorize token allocations to individual apps such as Monadic Pools<sup><a href="#reference-6" id="ref-6" className="text-[#af4a8c]">[6]</a></sup> to sustain their growth by, say, rewarding the first 10,000 users or the users on various leaderboards.
               </p>
             </section>
 
