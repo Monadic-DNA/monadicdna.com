@@ -392,54 +392,46 @@ export default function LightpaperPage() {
                   <a href="https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost" target="_blank" rel="noopener noreferrer" className="hover:text-[#af4a8c]">
                     The Cost of Sequencing a Human Genome
                   </a>
-                  <a href="#ref-1" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
                 <p id="reference-2" className="flex">
                   <span className="text-[#af4a8c] font-mono mr-2">[02]</span>
                   <a href="https://www.ncbi.nlm.nih.gov/books/NBK132148/" target="_blank" rel="noopener noreferrer" className="hover:text-[#af4a8c]">
                     Newborn Screening: An Overview
                   </a>
-                  <a href="#ref-2" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
                 <p id="reference-3" className="flex">
                   <span className="text-[#af4a8c] font-mono mr-2">[03]</span>
                   <a href="https://www.ga4gh.org/news_item/future-of-genomic-research-at-risk-without-greater-public-trust-in-how-genetic-data-is-shared-survey-finds/" target="_blank" rel="noopener noreferrer" className="hover:text-[#af4a8c]">
                     Future of genomic research at risk without greater public trust
                   </a>
-                  <a href="#ref-3" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
                 <p id="reference-4" className="flex">
                   <span className="text-[#af4a8c] font-mono mr-2">[04]</span>
                   <a href="https://www.nature.com/articles/d41586-025-00118-y" target="_blank" rel="noopener noreferrer" className="hover:text-[#af4a8c]">
                     Nature: Genetic data sharing
                   </a>
-                  <a href="#ref-4" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
                 <p id="reference-5" className="flex">
                   <span className="text-[#af4a8c] font-mono mr-2">[05]</span>
                   <a href="https://investors.23andme.com/news-releases/news-release-details/23andme-reports-fy2023-fourth-quarter-and-full-year-financial" target="_blank" rel="noopener noreferrer" className="hover:text-[#af4a8c]">
                     23andMe Reports FY2023 Fourth Quarter and Full Year Financial Results
                   </a>
-                  <a href="#ref-5" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
                 <p id="reference-6" className="flex">
                   <span className="text-[#af4a8c] font-mono mr-2">[06]</span>
                   This is a code name for conveying the spirit of the app. It will be replaced with something more appropriate.
-                  <a href="#ref-6" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
                 <p id="reference-7" className="flex">
                   <span className="text-[#af4a8c] font-mono mr-2">[07]</span>
                   <a href="https://www.c-span.org/program/public-affairs-event/unitedhealth-ceo-testifies-before-senate-on-cyber-attack-against-change-healthcare/641625" target="_blank" rel="noopener noreferrer" className="hover:text-[#af4a8c]">
                     UnitedHealth CEO Testifies Before Senate on Cyber Attack
                   </a>
-                  <a href="#ref-7" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
                 <p id="reference-8" className="flex">
                   <span className="text-[#af4a8c] font-mono mr-2">[08]</span>
                   <a href="https://en.wikipedia.org/wiki/23andMe_data_leak" target="_blank" rel="noopener noreferrer" className="hover:text-[#af4a8c]">
                     23andMe data leak
                   </a>
-                  <a href="#ref-8" className="ml-2 text-[#af4a8c]">↩</a>
                 </p>
               </div>
             </section>
