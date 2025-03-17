@@ -1,4 +1,3 @@
-import { AnnouncementBar } from '@/components/announcement-bar'
 export default function Hero() {
   return (
     <div className="">
@@ -9,7 +8,7 @@ export default function Hero() {
         <div className="mx-auto max-w-5xl text-center">
           {/* Launch Banner */}
        
-          <AnnouncementBar/>
+          {/* <AnnouncementBar/> */}
 
           {/* Main Heading */}
           <h1 className="mb-6  text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight ">

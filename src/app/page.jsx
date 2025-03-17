@@ -8,7 +8,7 @@ import WhyUs from "@/components/why-us";
 
 export default function Home() {
   return (
-    <div className="font-inter bg-[#FCFCFC] ">
+    <div className="font-inter ">
     <Hero/>
     {/* <MockupSection/> */}
     <MockupSectionV1/>
