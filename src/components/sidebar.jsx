@@ -29,6 +29,16 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           }}>
             Team
           </Link>
+          <Link href="/press" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Press
+          </Link>
+          <Link href="/lightpaper" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Lightpaper
+          </Link>
         </div>
       </div>
 
