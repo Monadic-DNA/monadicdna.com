@@ -119,7 +119,7 @@ export default function AndWeDAOPage() {
                     <svg className="w-6 h-6 text-[#af4a8c] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
-                    <span className="text-[#4B5563]">Incorporate concepts from the <Link href="/lightpaper" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to safely and securely open access to 23andMe to enable developers, researchers, biohackers, etc to build novel applications and run studies for the public benefit</span>
+                    <span className="text-[#4B5563]">Incorporate concepts from the <Link href="/lightpaper#ikai-protocol" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to safely and securely open access to 23andMe to enable developers, researchers, biohackers, etc to build novel applications and run studies for the public benefit</span>
                   </li>
                 </ul>
               </div>
@@ -193,7 +193,7 @@ export default function AndWeDAOPage() {
               </h2>
 
               <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
+                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper#ikai-protocol" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
               </p>
 
               <h2 className="text-2xl font-bold my-6 text-darkMain">
@@ -201,7 +201,7 @@ export default function AndWeDAOPage() {
               </h2>
 
               <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
+                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper#ikai-protocol" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
               </p>
 
               <h2 className="text-2xl font-bold my-6 text-darkMain">

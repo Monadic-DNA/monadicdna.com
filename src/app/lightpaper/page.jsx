@@ -169,7 +169,7 @@ export default function LightpaperPage() {
                 Pool creators specify the name of a pool, along with a funding amount, required attestations (for gating), premium attestations (for extra rewards), number of genomes needed, the code to be run and the visibility of the results. The creator can wholly fund the pool themselves or appeal to the community to fund it. The latter might be useful for, say, the active community of patients of the rare disease Ehlers-Danlos syndrome (EDS) where a researcher creates the pool and asks on the community forum for funding. Required attestations can be used to gate the pool to attested participants from a specific region or those with specific traits or NFTs. Premium attestations multiply rewards for holders of specified traits or NFTs so that an EDS pool can, for example, incentivize sufficient participation by actual EDS patients. The research pool's visibility controls whether the results of the research pool are public, gated or private.  When users sign up, they may be required to fill in a questionnaire to provide metadata for research purposes. Once a pool is fully funded and the required number of genomes is locked in, the code is executed, the results are attested and tokens are paid out to the pool creator, participants and the token holders of the underlying protocol.
               </p>
               <p className="text-[#4B5563] leading-relaxed mb-4">
-                This app will provisionally use various technologies provided by the Nillion project. nilDB, a decentralized encrypted database using multiparty compute (MPC), will be used to store and secure the data. nilQL, a query language, will be used to securely extract the required subsets of users’ genomic data which is then deposited into trusted execution environments (TEE), where the code for pools will be run. nilAI, which integrates nilDB and TEEs out of the box, will be used for research pools which need to use AI foundation models. 
+                This app will provisionally use various technologies provided by the Nillion project. nilDB, a decentralized encrypted database using multiparty compute (MPC), will be used to store and secure the data. nilQL, a query language, will be used to securely extract the required subsets of users' genomic data which is then deposited into trusted execution environments (TEE), where the code for pools will be run. nilAI, which integrates nilDB and TEEs out of the box, will be used for research pools which need to use AI foundation models. 
               </p>
               <p className="text-[#4B5563] leading-relaxed mb-4">
                 To prevent drop offs in engagement and reduce friction, we are introducing the concept of genomic delegation. While the default path is for the user to maintain complete confidentiality and control over their data, we offer those users who trust us (or any other entity within the ecosystem) the ability to delegate their data, i.e., upload a copy of their data under the control of an account controlled by the delegate. This lets the delegate find suitable pools for users and auto enroll them, thus ensuring constant rewards for users without their constant active participation. In return, the delegates earn a fraction of the rewards as a fee. Delegates compete for users based on their reputations, costs and missions.
@@ -179,7 +179,7 @@ export default function LightpaperPage() {
               </p>
             </section>
 
-            <section className="mb-12">
+            <section className="mb-12 scroll-mt-16 md:scroll-mt-20" id="ikai-protocol">
               <h2 className="text-2xl font-bold mb-6 text-darkMain tracking-wider uppercase">
                 Ikai Protocol
               </h2>
@@ -283,7 +283,7 @@ export default function LightpaperPage() {
                 A similar mechanism holds for delegation. If a user chooses an authorized delegate, their app records this onchain which enables the DAO to give carte blanche permissions for the users' nilDB data and traits to the delegate who can then use it for ecosystem actions, e.g., auto-enrolling the user in research pools on Monadic Pools.
               </p>
               <p className="text-[#4B5563] leading-relaxed mb-4">
-                Nillion’s upcoming nilAI product will combine nilDB and TEEs to offer scalable and secure AI processing of encrypted data. However, if needed for better suiting our needs, we can build a bespoke solution using FHE for secure storage and computation. 
+                Nillion's upcoming nilAI product will combine nilDB and TEEs to offer scalable and secure AI processing of encrypted data. However, if needed for better suiting our needs, we can build a bespoke solution using FHE for secure storage and computation. 
               </p>
               <p className="text-[#4B5563] leading-relaxed mb-4">
                 There is an alternate data flow using fully homomorphic encryption and decentralized storage for the Monadic Vault rollout but, for the sake of simplicity, this information is being omitted. Note that the Monadic Vault app will be using the alternate flow until the Ikai protocol is ready.

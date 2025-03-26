@@ -99,7 +99,7 @@ export default function FAQPage() {
             <Accordion 
               type="single" 
               collapsible 
-              className="space-y-4 [&_.accordion-item]:scroll-mt-36"
+              className="space-y-4 [&_.accordion-item]:scroll-mt-16 md:[&_.accordion-item]:scroll-mt-20"
               value={openItem}
               onValueChange={handleValueChange}
             >
@@ -325,7 +325,7 @@ export default function FAQPage() {
             <Accordion 
               type="single" 
               collapsible 
-              className="space-y-4 [&_.accordion-item]:scroll-mt-36"
+              className="space-y-4 [&_.accordion-item]:scroll-mt-16 md:[&_.accordion-item]:scroll-mt-20"
               value={openItem}
               onValueChange={handleValueChange}
             >
