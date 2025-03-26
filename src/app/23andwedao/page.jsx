@@ -146,7 +146,7 @@ export default function AndWeDAOPage() {
                   Help secure the privacy and future of genomic data for millions of users
                 </p>
                 <a
-                  href="#"
+                  href="https://discord.gg/HTuefxWnhW"
                   className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#af4a8c] rounded-lg hover:bg-[#9d3f7a] transition-colors duration-200"
                 >
                   Get Involved
@@ -238,7 +238,7 @@ export default function AndWeDAOPage() {
 
               <div className="bg-[#af4a8c]/5 rounded-lg p-6 text-center border border-[#af4a8c]/10 my-12">
                 <a
-                  href="#"
+                  href="https://discord.gg/HTuefxWnhW"
                   className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#af4a8c] rounded-lg hover:bg-[#9d3f7a] transition-colors duration-200"
                 >
                   Get Involved
