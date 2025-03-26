@@ -55,6 +55,11 @@ export default async function sitemap() {
       priority: 0.9,
       changeFrequency: 'weekly',
     },
+    {
+      route: '/23andwedao',
+      priority: 0.9,
+      changeFrequency: 'daily',
+    },
   ];
   
   // Create sitemap entries with actual last modified dates
