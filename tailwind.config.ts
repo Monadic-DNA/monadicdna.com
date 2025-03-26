@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
     darkMode: ["class"],
@@ -15,7 +16,10 @@ export default {
   			'star-movement-bottom': 'star-movement-bottom linear infinite alternate',
   			'star-movement-top': 'star-movement-top linear infinite alternate',
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			'gradient-shift': 'gradient-shift 4s ease infinite',
+			'gradient-shift-reverse': 'gradient-shift-reverse 4s ease infinite',
+			'float': 'float 15s ease-in-out infinite',
   		},
   		keyframes: {
   			marquee: {
@@ -69,7 +73,41 @@ export default {
   				to: {
   					height: '0'
   				}
-  			}
+  			},'gradient-shift': {
+				'0%': {
+					'background-position': '0% 0%',
+				},
+				'50%': {
+					'background-position': '100% 100%',
+				},
+				'100%': {
+					'background-position': '0% 0%',
+				}
+				},
+				'gradient-shift-reverse': {
+				'0%': {
+					'background-position': '100% 100%',
+				},
+				'50%': {
+					'background-position': '0% 0%',
+				},
+				'100%': {
+					'background-position': '100% 100%',
+				}
+			},'float': {
+				'0%, 100%': {
+					transform: 'translateY(0) translateX(0) rotate(0deg)',
+				},
+				'25%': {
+					transform: 'translateY(-30px) translateX(15px) rotate(5deg)',
+				},
+				'50%': {
+					transform: 'translateY(0) translateX(30px) rotate(0deg)',
+				},
+				'75%': {
+					transform: 'translateY(30px) translateX(15px) rotate(-5deg)',
+				},
+			}
   		},
   		fontFamily: {
   			unbounded: [
@@ -130,5 +168,5 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animate],
 } satisfies Config;
