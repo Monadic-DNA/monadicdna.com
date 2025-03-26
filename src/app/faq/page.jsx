@@ -91,7 +91,7 @@ export default function FAQPage() {
 
   return (
     <div>
-      <div id="faq" className="bg-[#FFFFFB]">
+      <div id="faq">
         <div className="w-full max-w-3xl mx-auto px-6 md:px-4 py-20">
           <h1 id="user-faq" className="text-3xl font-bold text-center mb-12">User FAQs</h1>
 

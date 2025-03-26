@@ -1,6 +1,6 @@
 export default function DNASecurity() {
   return (
-    <div className=" bg-[#FBFBFB] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
+    <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
       {/* Container for responsive grid/flex layout */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
         {/* Content Section */}
@@ -21,7 +21,7 @@ export default function DNASecurity() {
             </p>
 
             <p>
-            With FHE, your DNA data remains encrypted even while being analyzed for insights. Imagine solving a puzzle without ever seeing the pieces. Or cracking a Rubik's cube blindfolded. Or sculpting without sight, yet still achieving precision. You get the idea. Your DNA data stays private and secure, always. Even during computation.
+              With FHE, your DNA data remains encrypted even while being analyzed for insights. Imagine solving a puzzle without ever seeing the pieces. Or cracking a Rubik's cube blindfolded. Or sculpting without sight, yet still achieving precision. You get the idea. Your DNA data stays private and secure, always. Even during computation.
             </p>
 
             <div className="mt-8 p-4 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-lg shadow-sm">
