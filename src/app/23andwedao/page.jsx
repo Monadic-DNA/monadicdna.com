@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: getFullUrl('/images/social/og-image-logo.png'),
+        url: getFullUrl('/images/social/og-23andWE-DAO.png'),
         width: 1200,
         height: 630,
       },
