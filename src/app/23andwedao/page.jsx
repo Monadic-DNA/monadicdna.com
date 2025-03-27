@@ -165,14 +165,6 @@ export default function AndWeDAOPage() {
               </p>
 
               <h2 className="text-2xl font-bold my-6 text-darkMain">
-                Is KYC needed for participating in the DAO?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                Yes, pooling will either occur on a platform with KYC or KYC from a reputed provider will be applied after and any unverified funds will be returned minus network fees. 23andMe is an American company that has filed for bankruptcy. To make a valid and serious bid, we need to ensure the soundness of funds in this community effort and the DAO's standing as a serious and credible participant in the auction process.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
                 What happens if the DAO cannot raise sufficient funding?
               </h2>
 
@@ -218,6 +210,14 @@ export default function AndWeDAOPage() {
 
               <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
                 FHE and MPC are near-magical encryption technologies which allow computation on encrypted data without any need for decryption. They are therefore ideal for storing, securing and analyzing genomic data.
+              </p>
+
+              <h2 className="text-2xl font-bold my-6 text-darkMain">
+                Is KYC needed for participating in the DAO?
+              </h2>
+
+              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
+                Yes, pooling will either occur on a platform with KYC or KYC from a reputed provider will be applied after and any unverified funds will be returned minus network fees. 23andMe is an American company that has filed for bankruptcy. To make a valid and serious bid, we need to ensure the soundness of funds in this community effort and the DAO's standing as a serious and credible participant in the auction process.
               </p>
 
               <h2 className="text-2xl font-bold my-6 text-darkMain">
