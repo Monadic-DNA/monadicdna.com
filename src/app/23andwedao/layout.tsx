@@ -18,7 +18,7 @@ const inter = Inter({
 export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL('https://monadicdna.com'),
-    title: '23andWE DAO',
+    title: '23andWE DAO - Community bid to take back and secure 23andMe Data',
     description: 'Community bid to take back and secure 23andMe Data',
     openGraph: {
       images: [

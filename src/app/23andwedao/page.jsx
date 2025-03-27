@@ -1,20 +1,13 @@
-import { getFullUrl } from '@/lib/utils';
+"use client";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import Link from "next/link";
 import React from 'react';
-
-export const metadata = {
-  title: '23andWE DAO',
-  description: 'The community bid to take back and secure 23andMe Data',
-  openGraph: {
-    images: [
-      {
-        url: getFullUrl('/images/social/og-23andWE-DAO.png'),
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
-};
 
 const AnimatedBackground = () => {
   return (
@@ -46,6 +39,144 @@ const AnimatedBackground = () => {
           </div>
         ))}
       </div>
+    </div>
+  );
+};
+
+const FAQSection = () => {
+  return (
+    <div className="space-y-6">
+      <Accordion type="single" collapsible className="w-full space-y-6">
+        <AccordionItem value="item-4" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">What does the DAO intend to do with 23andMe?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper#ikai-protocol" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-9" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">Am I receiving ownership of 23andME in exchange for my donation?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                No. You are receiving a governance token, not fractionalized ownership. The DAO is taking donations and donors are receiving governance tokens with no expectation of profit. These donations are not tax deductible at this point in time.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-1" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">How much do we need to pool together for the auction?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                The DAO is aiming to pool at least $50M in USDC to have a fair and credible shot at acquiring and securing 23andMe data. On 28 February, 23andMe's market cap was $59M.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-2" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">What happens if the DAO cannot raise sufficient funding?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                All participants will be refunded their contributions, less Ethereum network fees for transferring funds.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-3" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">What if the DAO's bid doesn't go through?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                Suppose the acquisition does not go through for any reason, such as if the bid is rejected, blocked, or the deal just doesn't come together. In that case, all participants will be refunded their contributions, less legal, administrative and technical costs of putting together the bid.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-5" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">How will the DAO make money?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper#ikai-protocol" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-6" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">Will the DAO directly benefit Monadic DNA?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                There is no direct benefit to Monadic DNA or any specific individuals involved with this proposal. If the token holders vote to do so, Monadic DNA will be a technology provider for the DAO to secure 23andMe genomes under the Ikai protocol. Token holders can choose instead to adopt another protocol or technology provider for secure genomics. Monadic DNA benefits indirectly by greater public awareness of modern privacy-preserving encryption and blind computation technology for genetic data.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-7" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">Why use FHE and MPC?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                FHE and MPC are near-magical encryption technologies which allow computation on encrypted data without any need for decryption. They are therefore ideal for storing, securing and analyzing genomic data.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-8" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">Is KYC needed for participating in the DAO?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                Yes, pooling will either occur on a platform with KYC or KYC from a reputed provider will be applied after and any unverified funds will be returned minus network fees. 23andMe is an American company that has filed for bankruptcy. To make a valid and serious bid, we need to ensure the soundness of funds in this community effort and the DAO's standing as a serious and credible participant in the auction process.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-10" className="border border-[#af4a8c]/10 rounded-lg overflow-hidden">
+          <AccordionTrigger className="flex justify-between items-center w-full p-4 text-left bg-[#af4a8c]/5 hover:bg-[#af4a8c]/10 transition-colors duration-200 no-underline">
+            <h2 className="text-sm md:text-base font-bold text-darkMain">How will the DAO prevent whales from dominating and subverting its goals?</h2>
+          </AccordionTrigger>
+          <AccordionContent className="bg-white">
+            <div className="p-4">
+              <p className="text-[#4B5563] leading-relaxed tracking-wide">
+                The DAO will use tokenomics to put in measures such as sybil-resistent quadratic voting (e.g. Gitcoin grants), a guardian council (e.g. stewards on ENS DAO), conviction voting (e.g. 1Hive), etc to limit any outsize effects of whales.
+              </p>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
     </div>
   );
 };
@@ -157,84 +288,12 @@ export default function AndWeDAOPage() {
               </div>
 
               <h2 className="text-2xl font-bold mb-6 text-darkMain">
-                How much do we need to pool together for the auction?
+                Frequently Asked Questions
               </h2>
 
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                The DAO is aiming to pool at least $50M in USDC to have a fair and credible shot at acquiring and securing 23andMe data. On 28 February, 23andMe's market cap was $59M.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                What happens if the DAO cannot raise sufficient funding?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                All participants will be refunded their contributions, less Ethereum network fees for transferring funds. 
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                What if the DAO's bid doesn't go through?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                Suppose the acquisition does not go through for any reason, such as if the bid is rejected, blocked, or the deal just doesn't come together. In that case, all participants will be refunded their contributions, less legal, administrative and technical costs of putting together the bid. 
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                What does the DAO intend to do with 23andMe?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper#ikai-protocol" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                How will the DAO make money?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                The DAO will first ensure that 23andMe users have the option to permanently and irrevocably delete their data. After that, the DAO will secure the data using FHE and MPC. Finally, the DAO will adopt an open protocol such as the <Link href="/lightpaper#ikai-protocol" className="text-[#af4a8c] hover:underline">Ikai protocol</Link> to create an open ecosystem for the data to be shared and analyzed under full encryption.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                Will the DAO directly benefit Monadic DNA?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                There is no direct benefit to Monadic DNA or any specific individuals involved with this proposal. If the token holders vote to do so, Monadic DNA will be a technology provider for the DAO to secure 23andMe genomes under the Ikai protocol. Token holders can choose instead to adopt another protocol or technology provider for secure genomics. Monadic DNA benefits indirectly by greater public awareness of modern privacy-preserving encryption and blind computation technology for genetic data.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                Why use FHE and MPC?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                FHE and MPC are near-magical encryption technologies which allow computation on encrypted data without any need for decryption. They are therefore ideal for storing, securing and analyzing genomic data.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                Is KYC needed for participating in the DAO?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                Yes, pooling will either occur on a platform with KYC or KYC from a reputed provider will be applied after and any unverified funds will be returned minus network fees. 23andMe is an American company that has filed for bankruptcy. To make a valid and serious bid, we need to ensure the soundness of funds in this community effort and the DAO's standing as a serious and credible participant in the auction process.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                Am I receiving ownership of 23andME in exchange for my donation?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                No. You are receiving a governance token, not fractionalized ownership. The DAO is taking donations and donors are receiving governance tokens with no expectation of profit. These donations are not tax deductible at this point in time.
-              </p>
-
-              <h2 className="text-2xl font-bold my-6 text-darkMain">
-                How will the DAO prevent whales from dominating and subverting its goals?
-              </h2>
-
-              <p className="text-[#4B5563] leading-relaxed mb-4 tracking-wide">
-                The DAO will use tokenomics to put in measures such as sybil-resistent quadratic voting (e.g. Gitcoin grants), a guardian council (e.g. stewards on ENS DAO), conviction voting (e.g. 1Hive), etc to limit any outsize effects of whales.
-              </p>
+              <div className="rounded-[32px] border border-[#EDE8E4] bg-[#F6F3F1]/80 p-8 md:p-12 shadow-[0px_2px_4px_0px_rgba(255,255,255,0.50)_inset,_0px_1px_3px_0px_rgba(0,0,0,0.12)]">
+                <FAQSection />
+              </div>
 
               <div className="bg-[#af4a8c]/5 rounded-lg p-6 text-center border border-[#af4a8c]/10 my-12">
                 <a
@@ -247,7 +306,6 @@ export default function AndWeDAOPage() {
                   </svg>
                 </a>
               </div>
-              
             </section>
           </div>
         </div>

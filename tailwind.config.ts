@@ -14,8 +14,8 @@ export default {
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
   			'star-movement-bottom': 'star-movement-bottom linear infinite alternate',
   			'star-movement-top': 'star-movement-top linear infinite alternate',
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'accordion-down': 'accordion-down 0.15s cubic-bezier(0.4, 0, 0.2, 1)',
+  			'accordion-up': 'accordion-up 0.15s cubic-bezier(0.4, 0, 0.2, 1)',
 			'gradient-shift': 'gradient-shift 4s ease infinite',
 			'gradient-shift-reverse': 'gradient-shift-reverse 4s ease infinite',
 			'float': 'float 15s ease-in-out infinite',
@@ -72,7 +72,8 @@ export default {
   				to: {
   					height: '0'
   				}
-  			},'gradient-shift': {
+  			},
+  			'gradient-shift': {
 				'0%': {
 					'background-position': '0% 0%',
 				},
