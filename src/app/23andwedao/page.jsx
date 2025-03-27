@@ -181,6 +181,38 @@ const FAQSection = () => {
   );
 };
 
+const Contributor = ({ name, location, xHandle }) => {
+  return (
+    <div className="p-4">
+      <h3 className="text-sm md:text-base font-medium text-darkMain">
+        {xHandle ? (
+          <a 
+            href={`https://x.com/${xHandle}`} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-[#af4a8c] transition-colors duration-200 inline-flex items-center"
+          >
+            {name}
+            <svg className="w-3.5 h-3.5 ml-1" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        ) : (
+          name
+        )}
+      </h3>
+      <p className="text-xs md:text-sm text-[#4B5563]">{location}</p>
+    </div>
+  );
+};
+
+const contributors = [
+  { name: "Vishakh", location: "New York, NY", xHandle: "vishakh" },
+  { name: "Jay Meattle", location: "Cambridge, MA", xHandle: "meattle" },
+  { name: "Kapil", location: "New York, NY" },
+  { name: "Carol Smith", location: "Berlin, Germany" },
+];
+
 export default function AndWeDAOPage() {
   return (
     <div className="min-h-screen font-['Space_Grotesk',sans-serif] tracking-wide relative">
@@ -280,7 +312,7 @@ export default function AndWeDAOPage() {
                   href="https://discord.gg/HTuefxWnhW"
                   className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#af4a8c] rounded-lg hover:bg-[#9d3f7a] transition-colors duration-200"
                 >
-                  Get Involved
+                  Join our Discord
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
@@ -295,12 +327,31 @@ export default function AndWeDAOPage() {
                 <FAQSection />
               </div>
 
+              {contributors.length > 0 && (
+                <>
+                  <h2 className="text-2xl font-bold my-4 mt-12 text-darkMain">
+                    Core Contributors
+                  </h2>
+
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+                    {contributors.map((contributor, index) => (
+                      <Contributor 
+                        key={index}
+                        name={contributor.name}
+                        location={contributor.location}
+                        xHandle={contributor.xHandle}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+
               <div className="bg-[#af4a8c]/5 rounded-lg p-6 text-center border border-[#af4a8c]/10 my-12">
                 <a
                   href="https://discord.gg/HTuefxWnhW"
                   className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#af4a8c] rounded-lg hover:bg-[#9d3f7a] transition-colors duration-200"
                 >
-                  Get Involved
+                  Join our Discord
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                   </svg>
