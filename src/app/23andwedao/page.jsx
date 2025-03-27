@@ -67,7 +67,7 @@ const FAQSection = () => {
           <AccordionContent className="bg-white">
             <div className="p-4">
               <p className="text-[#4B5563] leading-relaxed tracking-wide">
-                No. You are receiving a governance token, not fractionalized ownership. The DAO is taking donations and donors are receiving governance tokens with no expectation of profit. These donations are not tax deductible at this point in time.
+                No. You are receiving a governance token, not fractionalized ownership. Governance includes the ability to advise on (for illustrative purposes) which protocols to adopt, on the mission and values of 23andWE DAO. The DAO is taking donations and donors are receiving governance tokens with no expectation of profit. These donations are not tax deductible at this point in time.
               </p>
             </div>
           </AccordionContent>
