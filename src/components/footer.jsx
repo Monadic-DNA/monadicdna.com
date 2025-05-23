@@ -2,16 +2,15 @@
 
 import Link from "next/link";
 
-export default function Footer() {  
+export default function Footer() {
   return (
-    <footer
-      className="bg-[#0D0C0C] font-inter text-white py-12 px-4 md:px-12 ">
+    <footer className="bg-[#0D0C0C] font-inter text-white py-12 px-4 md:px-12 ">
       <div className="max-w-7xl mx-auto">
         {/* Mobile Layout */}
         <div className="md:hidden">
           <Link href="/">
-            <img 
-              src="/images/MonadicDNA-logo-dark-text.svg" 
+            <img
+              src="/images/MonadicDNA-logo-dark-text.svg"
               alt="Monadic Health"
               className="h-5 md:h-[26px] mb-6 w-auto"
             />
@@ -31,6 +30,9 @@ export default function Footer() {
             </Link>
             <Link href="/lightpaper" className="text-white hover:text-gray-300">
               Lightpaper
+            </Link>
+            <Link href="/guide" className="text-white hover:text-gray-300">
+              Step-by-Step Guide
             </Link>
             <Link href="/terms" className="text-white hover:text-gray-300">
               Terms of Service
@@ -110,9 +112,9 @@ export default function Footer() {
             </Link>
 
             <Link
-             href="https://www.linkedin.com/company/monadichealth/"
-             target="_blank"
-             rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/monadichealth/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
             >
               <svg
@@ -141,8 +143,8 @@ export default function Footer() {
             {/* Left Section */}
             <div className="space-y-8">
               <Link href="/">
-                <img 
-                  src="/images/MonadicDNA-logo-dark-text.svg" 
+                <img
+                  src="/images/MonadicDNA-logo-dark-text.svg"
                   alt="Monadic Health"
                   className="h-4 md:h-7 w-auto"
                 />
@@ -194,9 +196,9 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                   href="mailto:hello@monadicdna.com"
-                   target="_blank"
-                   rel="noopener noreferrer"
+                  href="mailto:hello@monadicdna.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
                 >
                   <svg
@@ -259,8 +261,10 @@ export default function Footer() {
                 <Link href="/lightpaper" className="block hover:text-gray-300">
                   Lightpaper
                 </Link>
+                <Link href="/guide" className="block hover:text-gray-300">
+                  Step-by-Step Guide
+                </Link>
               </div>
-      
             </div>
           </div>
 
