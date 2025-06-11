@@ -4,7 +4,7 @@ import path from 'path';
 export default async function sitemap() {
   // Base URL of website
   const baseUrl = 'https://monadicdna.com';
-  
+
   // Function to get the last modified date of a file
   const getLastModified = async (route) => {
     try {
@@ -17,7 +17,7 @@ export default async function sitemap() {
         const routePath = route.substring(1);
         filePath = path.join(process.cwd(), `src/app/${routePath}/page.jsx`);
       }
-      
+
       // Get file stats
       const stats = await fs.stat(filePath);
       return new Date(stats.mtime);
@@ -27,17 +27,12 @@ export default async function sitemap() {
       return new Date();
     }
   };
-  
+
   // Define all static routes with appropriate priorities and change frequencies
   const routes = [
     {
       route: '',
       priority: 1.0,
-      changeFrequency: 'daily',
-    },
-    {
-      route: '/team',
-      priority: 0.8,
       changeFrequency: 'daily',
     },
     {
@@ -61,7 +56,7 @@ export default async function sitemap() {
       changeFrequency: 'daily',
     },
   ];
-  
+
   // Create sitemap entries with actual last modified dates
   const staticRoutes = await Promise.all(
     routes.map(async ({ route, priority, changeFrequency }) => ({
@@ -73,4 +68,4 @@ export default async function sitemap() {
   );
 
   return staticRoutes;
-} 
+}
