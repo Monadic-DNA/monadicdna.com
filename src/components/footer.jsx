@@ -22,9 +22,6 @@ export default function Footer() {
             <Link href="/faq" className="text-white hover:text-gray-300">
               FAQ
             </Link>
-            <Link href="/team" className="text-white hover:text-gray-300">
-              Team
-            </Link>
             <Link href="/press" className="text-white hover:text-gray-300">
               Press
             </Link>
@@ -248,9 +245,6 @@ export default function Footer() {
               <div className="space-y-4">
                 <Link href="/#about" className="block hover:text-gray-300">
                   About
-                </Link>
-                <Link href="/team" className="block hover:text-gray-300">
-                  Team
                 </Link>
                 <Link href="/faq" className="block hover:text-gray-300">
                   FAQ
