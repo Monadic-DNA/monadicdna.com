@@ -80,16 +80,18 @@ export default function DownloadAncestryPage() {
                 </h3>
                 <p className="mb-4">{step.text}</p>
 
-                <div className="flex flex-col items-center">
-                  <img
-                    src={`/images/guide/ancestry/step-${index + 1}.png`}
-                    alt={`Step ${index + 1} - ${step.title}`}
-                    className="w-full max-w-[800px] rounded-t-lg border border-b-0 border-[#af4a8c]/10"
-                  />
-                  <div className="w-full max-w-[800px] bg-[#af4a8c]/5 py-2 px-4 text-center text-[#4B5563] text-sm italic rounded-b-lg border-t border-[#af4a8c]/10">
-                    Step {index + 1}: {step.title}
+                {index !== 0 && (
+                  <div className="flex flex-col items-center">
+                    <img
+                      src={`/images/guide/ancestry/step-${index + 1}.png`}
+                      alt={`Step ${index + 1} - ${step.title}`}
+                      className="w-full max-w-[800px] rounded-t-lg border border-b-0 border-[#af4a8c]/10"
+                    />
+                    <div className="w-full max-w-[800px] bg-[#af4a8c]/5 py-2 px-4 text-center text-[#4B5563] text-sm italic rounded-b-lg border-t border-[#af4a8c]/10">
+                      Step {index + 1}: {step.title}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             ))}
 
