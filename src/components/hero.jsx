@@ -1,13 +1,13 @@
 export default function Hero() {
   return (
     <div className="">
-     
+
 
       {/* Hero Section */}
       <main className="px-6 pt-24 md:pt-8 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           {/* Launch Banner */}
-       
+
           {/* <AnnouncementBar/> */}
 
           {/* Main Heading */}
@@ -21,30 +21,38 @@ export default function Hero() {
             An award-winning genomics app built with advanced encryption and blind computation technology. Learn from your DNA while your data remains private, protected, and entirely in your hands.
           </p>
 
-          <p
-className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:text-base  leading-relaxed text-[#232323]'>
-            An award-winning genomics app with advanced encryption and blind computation technology.
-          </p>
+          <div className='mt-4'>
+            <a
+              href="https://testflight.apple.com/join/KnPAc4zz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src="https://developer.apple.com/assets/elements/badges/testflight-on-app-store.svg"
+                alt="Join the beta on TestFlight"
+                className="h-10 md:h-12"
+              />
+            </a>
+          </div>
 
-          <p className='text-stone-600  text-sm mt-4'>Available soon on Apple iOS devices</p>
-
-          {/* Email Signup 
+          {/* Email Signup
           <div className="mb-4">
-          
+
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Input 
+              <Input
                 type="email"
-                name='email' 
+                name='email'
                 placeholder="Enter Email"
                 className="max-w-sm h-10 md:h-12 placeholder:text-gray-500 text-sm md:text-base focus:outline-none focus:ring-gray-300 focus:ring-1 rounded-none  border-black "
               />
-              <Button 
+              <Button
                 className="max-w-sm w-full md:w-auto bg-black text-white hover:bg-black/90 md:text-base text-sm h-10 md:h-12 px-8 rounded-none"
               >
                 Join the waitlist
               </Button>
             </div>
-            
+
             <p className='md:hidden text-stone-600  text-sm mt-4'>Available soon on iOS devices</p>
           </div>
           <p className="hidden md:block mb-4  text-sm text-[#7E7E7E]">
@@ -52,7 +60,7 @@ className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:tex
             </p>
         */}
         </div>
-        
+
       </main>
     </div>
   )
