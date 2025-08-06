@@ -21,19 +21,27 @@ export default function Hero() {
             An award-winning genomics app built with advanced encryption and blind computation technology. Learn from your DNA while your data remains private, protected, and entirely in your hands.
           </p>
 
-          <div className='mt-4'>
+          <p
+className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:text-base  leading-relaxed text-[#232323]'>
+            An award-winning genomics app with advanced encryption and blind computation technology.
+          </p>
+
+          <div className='mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center'>
             <a
               href="https://testflight.apple.com/join/KnPAc4zz"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block"
+              className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm md:text-base"
             >
-              <img
-                src="https://developer.apple.com/assets/elements/badges/testflight-on-app-store.svg"
-                alt="Join the beta on TestFlight"
-                className="h-10 md:h-12"
-              />
+              Join TestFlight Alpha (iOS)
             </a>
+
+            <button
+              disabled
+              className="bg-gray-300 text-gray-600 px-6 py-3 rounded-lg cursor-not-allowed font-medium text-sm md:text-base"
+            >
+              Coming Soon on Android
+            </button>
           </div>
 
           {/* Email Signup
@@ -65,4 +73,3 @@ export default function Hero() {
     </div>
   )
 }
-
