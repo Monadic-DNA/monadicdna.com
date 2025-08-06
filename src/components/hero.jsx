@@ -43,30 +43,6 @@ className='block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:tex
               Coming Soon on Android
             </button>
           </div>
-
-          {/* Email Signup
-          <div className="mb-4">
-
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Input
-                type="email"
-                name='email'
-                placeholder="Enter Email"
-                className="max-w-sm h-10 md:h-12 placeholder:text-gray-500 text-sm md:text-base focus:outline-none focus:ring-gray-300 focus:ring-1 rounded-none  border-black "
-              />
-              <Button
-                className="max-w-sm w-full md:w-auto bg-black text-white hover:bg-black/90 md:text-base text-sm h-10 md:h-12 px-8 rounded-none"
-              >
-                Join the waitlist
-              </Button>
-            </div>
-
-            <p className='md:hidden text-stone-600  text-sm mt-4'>Available soon on iOS devices</p>
-          </div>
-          <p className="hidden md:block mb-4  text-sm text-[#7E7E7E]">
-              Stay in the loop! Early users get access to exclusive insights that won't be available later.
-            </p>
-        */}
         </div>
 
       </main>
