@@ -134,7 +134,7 @@ export default function Footer() {
               <span className="sr-only">Linkedin</span>
             </Link>
           </div>
-          <p className="text-base">©2025 Monadic Health</p>
+          <p className="text-base">©2025 <a href="https://recherche.tech/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">Recherché Inc</a></p>
         </div>
 
         {/* Desktop Layout */}
@@ -270,7 +270,7 @@ export default function Footer() {
 
           {/* Bottom Section */}
           <div className="mt-8 pt-4 fon border-white/10 flex justify-start gap-x-6 items-center">
-            <p className="text-base">© 2025 Monadic Health</p>
+            <p className="text-base">© 2025 <a href="https://recherche.tech/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">Recherché Inc</a></p>
             <div className="flex gap-6">
               <Link href="/terms" className="hover:text-gray-300">
                 Terms of Service
