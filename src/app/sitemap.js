@@ -37,23 +37,38 @@ export default async function sitemap() {
     },
     {
       route: '/faq',
-      priority: 0.7,
-      changeFrequency: 'daily',
+      priority: 0.8,
+      changeFrequency: 'weekly',
     },
     {
       route: '/press',
       priority: 0.7,
-      changeFrequency: 'daily',
+      changeFrequency: 'monthly',
     },
     {
       route: '/lightpaper',
       priority: 0.9,
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
+    },
+    {
+      route: '/guide',
+      priority: 0.8,
+      changeFrequency: 'monthly',
+    },
+    {
+      route: '/terms',
+      priority: 0.5,
+      changeFrequency: 'yearly',
+    },
+    {
+      route: '/privacy',
+      priority: 0.5,
+      changeFrequency: 'yearly',
     },
     {
       route: '/23andwedao',
       priority: 0.9,
-      changeFrequency: 'daily',
+      changeFrequency: 'weekly',
     },
   ];
 
