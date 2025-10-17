@@ -37,6 +37,9 @@ const NavPill = () => {
             <Link href="/faq" className="text-base leading-6 text-black hover:text-gray-700 transition-colors duration-300">
               FAQ
             </Link>
+            <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-base leading-6 text-black hover:text-gray-700 transition-colors duration-300">
+              Blog
+            </Link>
         </div>
       </div>
     </nav>
