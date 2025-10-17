@@ -16,6 +16,9 @@ const NavbarDesktop = () => {
           <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
             FAQ
           </Link>
+          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            Blog
+          </Link>
         </div>
       </div>
     </nav>

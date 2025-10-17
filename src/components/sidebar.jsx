@@ -19,6 +19,11 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           }}>
             About
           </Link>
+          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Blog
+          </Link>
           <Link href="/faq" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
             toggleSidebar();
           }}>

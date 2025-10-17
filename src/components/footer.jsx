@@ -19,6 +19,9 @@ export default function Footer() {
             <Link href="/#about" className="text-white hover:text-gray-300">
               About
             </Link>
+            <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+              Blog
+            </Link>
             <Link href="/faq" className="text-white hover:text-gray-300">
               FAQ
             </Link>
@@ -245,6 +248,9 @@ export default function Footer() {
               <div className="space-y-4">
                 <Link href="/#about" className="block hover:text-gray-300">
                   About
+                </Link>
+                <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300">
+                  Blog
                 </Link>
                 <Link href="/faq" className="block hover:text-gray-300">
                   FAQ
