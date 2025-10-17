@@ -133,6 +133,28 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Linkedin</span>
             </Link>
+
+            <Link
+              href="https://recherche.discourse.group/c/public/monadic-dna/30"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+            >
+              <svg
+                className="h-5 w-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.103 0C18.666 0 24 5.485 24 11.997c0 6.51-5.33 11.99-11.9 11.99L0 24V11.79C0 5.28 5.532 0 12.103 0zm.116 4.563c-2.593-.003-4.996 1.352-6.337 3.57-1.33 2.208-1.387 4.957-.148 7.22L4.4 19.61l4.794-1.074c2.745 1.225 5.965.676 8.136-1.39 2.17-2.054 2.86-5.228 1.73-7.997-1.11-2.758-3.77-4.564-6.84-4.585v-.001z"
+                  fill="black"
+                />
+              </svg>
+              <span className="sr-only">Discourse</span>
+            </Link>
           </div>
           <p className="text-base">©2025 <a href="https://recherche.tech/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">Recherché Inc</a></p>
         </div>
@@ -239,6 +261,28 @@ export default function Footer() {
                     />
                   </svg>
                   <span className="sr-only">Linkedin</span>
+                </Link>
+
+                <Link
+                  href="https://recherche.discourse.group/c/public/monadic-dna/30"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-white rounded-full flex justify-center items-center hover:bg-gray-100 transition-colors"
+                >
+                  <svg
+                    className="h-5 w-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.103 0C18.666 0 24 5.485 24 11.997c0 6.51-5.33 11.99-11.9 11.99L0 24V11.79C0 5.28 5.532 0 12.103 0zm.116 4.563c-2.593-.003-4.996 1.352-6.337 3.57-1.33 2.208-1.387 4.957-.148 7.22L4.4 19.61l4.794-1.074c2.745 1.225 5.965.676 8.136-1.39 2.17-2.054 2.86-5.228 1.73-7.997-1.11-2.758-3.77-4.564-6.84-4.585v-.001z"
+                      fill="black"
+                    />
+                  </svg>
+                  <span className="sr-only">Discourse</span>
                 </Link>
               </div>
             </div>
