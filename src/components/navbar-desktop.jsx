@@ -10,7 +10,7 @@ const NavbarDesktop = () => {
     <nav className="navbar-desktop w-full border-gray-800 hidden md:block">
       <div className="mx-auto flex h-20 w-full max-w-[1440px] items-center justify-between px-5">
         <Link href="/">
-          <img className="h-14 w-auto" src="/images/logo.png" alt="logo" />
+          <img className="h-14 w-auto" src="/images/logo.png" alt="Monadic DNA - Privacy-first genomics platform" />
         </Link>
         <div className="flex items-center gap-8">
           <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
