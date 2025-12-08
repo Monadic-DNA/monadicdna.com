@@ -42,6 +42,25 @@ const Navbar = () => {
             <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-[15px] leading-6 text-[#344054] hover:text-black">
               Blog
             </Link>
+            <div className="relative group">
+              <button className="text-[15px] leading-6 text-[#344054] hover:text-black flex items-center gap-1">
+                Apps
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <Link href="https://explorer.monadicdna.com/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100 hover:text-black">
+                  Monadic DNA Explorer
+                </Link>
+                <Link href="/vault" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100 hover:text-black">
+                  Monadic DNA Vault
+                </Link>
+                <Link href="/batcher" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100 hover:text-black">
+                  Monadic DNA Batcher
+                </Link>
+              </div>
+            </div>
           </div>
           <div className="hidden md:block w-8"></div>
           <button className="md:hidden" onClick={toggleSidebar}>

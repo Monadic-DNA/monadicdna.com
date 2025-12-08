@@ -29,6 +29,24 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           }}>
             FAQ
           </Link>
+          <div className="border-t border-gray-200 my-2"></div>
+          <div className="text-sm font-bold text-gray-500 px-3 py-1">APPS</div>
+          <Link href="https://explorer.monadicdna.com/" target="_blank" rel="noopener noreferrer" className="text-lg p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Monadic DNA Explorer
+          </Link>
+          <Link href="/vault" className="text-lg p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Monadic DNA Vault
+          </Link>
+          <Link href="/batcher" className="text-lg p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Monadic DNA Batcher
+          </Link>
+          <div className="border-t border-gray-200 my-2"></div>
           <Link href="/press" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
             toggleSidebar();
           }}>
