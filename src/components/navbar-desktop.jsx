@@ -21,13 +21,16 @@ const NavbarDesktop = () => {
               </svg>
             </button>
             {isAppsOpen && (
-              <div className="absolute top-full left-0 pt-2">
+              <div className="absolute top-full left-0 pt-2 z-50">
                 <div className="bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[160px]">
                 <Link href="https://explorer.monadicdna.com/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100">
                   Explorer
                 </Link>
                 <Link href="/vault" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100">
                   Vault
+                </Link>
+                <Link href="/batcher" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100">
+                  Batcher
                 </Link>
                 </div>
               </div>

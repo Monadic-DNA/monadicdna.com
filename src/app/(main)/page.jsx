@@ -17,12 +17,12 @@ export default function Home() {
         <div className="mx-auto max-w-5xl text-center relative">
           {/* Main Heading */}
           <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight text-white">
-            Privacy-First Genomics Platform
+            Genetic Insights Without Compromise
           </h1>
 
           {/* Subheading */}
           <p className="hidden md:block md:mb-8 text-balance mb-6 max-w-5xl sm:text-xl text-base leading-relaxed text-white">
-            Unlock the power of your DNA with complete privacy and control. Explore genetic insights, securely store your data, and access cutting-edge genomics tools—all built with advanced encryption and blind computation technology.
+            Unlock genetic insights with complete privacy and control. Explore thousands of genetic traits, securely store your data, and access cutting-edge personal genomics tools, all built with advanced encryption and blind computation technology.
           </p>
 
           <p className="block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:text-base leading-relaxed text-white">
@@ -46,7 +46,7 @@ export default function Home() {
                 Explorer
               </h3>
               <p className="text-gray-700 text-center mb-6">
-                Discover and analyze your genetic traits with AI-powered semantic search. Explore thousands of genetic studies with privacy-preserving LLM analysis.
+                Explore more than a million scientifically-vetted genetic traits, all on your own device.
               </p>
               <a
                 href="https://explorer.monadicdna.com/"
@@ -67,7 +67,7 @@ export default function Home() {
                 Vault
               </h3>
               <p className="text-gray-700 text-center mb-6">
-                Securely import and store your DNA data from other services or get sequenced through our privacy-conscious lab partner. Full control, always.
+                Securely store your genetic data without ever revealing your genetic code to us.
               </p>
               <div className="flex flex-col gap-2 items-center">
                 <Link
@@ -89,7 +89,7 @@ export default function Home() {
                 Batcher
               </h3>
               <p className="text-gray-700 text-center mb-6">
-                Anonymously commit to getting genotyped. When enough users join a batch, get affordable sequencing with complete privacy using only kit IDs.
+                Get your DNA sequenced anonymously using our novel mixing system.
               </p>
               <div className="flex flex-col gap-2 items-center">
                 <Link
@@ -108,19 +108,19 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-black mb-8">Why Choose Monadic DNA?</h2>
+          <h2 className="text-3xl md:text-4xl font-black mb-8">Our Philosophy</h2>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div>
               <h3 className="font-bold text-xl mb-3">Privacy First</h3>
-              <p className="text-gray-700">Built with advanced encryption and blind computation. Your data never leaves your control.</p>
+              <p className="text-gray-700">We use fully homomorphic encryption (FHE), multi-party compute (MPC), trusted execution environments (TEE) and local processing to keep your data under your control.</p>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-3">Open & Transparent</h3>
-              <p className="text-gray-700">Open-source tools you can trust. No black boxes, no hidden agendas.</p>
+              <h3 className="font-bold text-xl mb-3">No Snooping</h3>
+              <p className="text-gray-700">We do not sell your data or share it with third parties. We never look at your data on our servers. In fact, we could not look even if we wanted to.</p>
             </div>
             <div>
               <h3 className="font-bold text-xl mb-3">Cutting Edge</h3>
-              <p className="text-gray-700">AI-powered analysis with the latest genomics research at your fingertips.</p>
+              <p className="text-gray-700">We offer LLM-powered analysis with the latest scientifically-validated, publicly-funded genomics research at your fingertips.</p>
             </div>
           </div>
         </div>
