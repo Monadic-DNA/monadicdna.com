@@ -2,10 +2,19 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="font-inter">
+    <div className="font-inter relative">
+      {/* Global Glowing Orbs */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+        <div className="absolute top-[10%] left-[20%] w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-[100px] animate-orb-drift" />
+        <div className="absolute bottom-[20%] right-[15%] w-[250px] h-[250px] bg-blue-500/15 rounded-full blur-[100px] animate-orb-drift-2" />
+      </div>
+
       {/* Hero Section */}
-      <main className="px-6 pt-24 md:pt-8 lg:px-8">
-        <div className="mx-auto max-w-5xl text-center">
+      <main className="px-6 pt-24 md:pt-8 lg:px-8 relative overflow-hidden">
+        {/* Animated Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30 bg-[length:200%_200%] animate-gradient-shift -z-10" />
+
+        <div className="mx-auto max-w-5xl text-center relative">
           {/* Main Heading */}
           <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight">
             Privacy-First Genomics Platform
@@ -23,27 +32,27 @@ export default function Home() {
       </main>
 
       {/* Products Section */}
-      <section className="relative bg-[#1A1A1A] py-24 md:py-24 z-20 mt-12 md:mt-24">
+      <section className="relative bg-white py-16 md:py-20 z-20 mt-8 md:mt-12">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-black text-white text-center mb-16">Our Products</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-black text-center mb-16">Our Products</h2>
 
           <div className="flex flex-wrap">
             {/* Explorer Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
-              <div className="mb-8 h-24 flex items-end justify-center">
-                <img className="w-24 inline-block" src="/images/features/key-illustration.png" alt="Explorer" />
+              <div className="mb-8 h-40 flex items-center justify-center">
+                <img className="w-44 inline-block" src="/images/appimages/explorer.png" alt="Explorer" />
               </div>
-              <h3 className="font-black text-center text-white flex items-center justify-center mb-4">
-                Monadic DNA Explorer
+              <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
+                Explorer
               </h3>
-              <p className="text-white text-center mb-6">
+              <p className="text-gray-700 text-center mb-6">
                 Discover and analyze your genetic traits with AI-powered semantic search. Explore thousands of genetic studies with privacy-preserving LLM analysis.
               </p>
               <a
                 href="https://explorer.monadicdna.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors font-medium text-sm md:text-base"
+                className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm md:text-base"
               >
                 Launch Explorer
               </a>
@@ -51,53 +60,45 @@ export default function Home() {
 
             {/* Vault Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
-              <div className="mb-8 relative mx-auto h-24 flex items-end justify-center">
-                <div className="flex">
-                  <img className="px-0 py-0 rounded-2xl" src="/images/features/23andme-logo.svg" alt="23andMe" />
-                  <div className="flex flex-col mt-[-12px] gap-y-1">
-                    <div className="ml-1 -mt-1">
-                      <img className="px-2 py-1 rounded-2xl" src="/images/features/test-tube-icon.svg" alt="Collection-tube" />
-                    </div>
-                    <img className="px-4 mt-1 py-1 rounded-2xl" src="/images/features/ancestry-logo.svg" alt="AncestryDNA" />
-                  </div>
-                </div>
+              <div className="mb-8 h-40 flex items-center justify-center">
+                <img className="w-40 inline-block" src="/images/blind-computation.svg" alt="Vault" />
               </div>
-              <h3 className="font-black text-center text-white flex items-center justify-center mb-4">
-                Monadic DNA Vault
+              <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
+                Vault
               </h3>
-              <p className="text-white text-center mb-6">
+              <p className="text-gray-700 text-center mb-6">
                 Securely import and store your DNA data from other services or get sequenced through our privacy-conscious lab partner. Full control, always.
               </p>
               <div className="flex flex-col gap-2 items-center">
                 <Link
                   href="/vault"
-                  className="inline-block bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors font-medium text-sm md:text-base"
+                  className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm md:text-base"
                 >
                   Learn More
                 </Link>
-                <span className="text-sm text-gray-400">(In Alpha)</span>
+                <span className="text-sm text-gray-500">(In Alpha)</span>
               </div>
             </div>
 
             {/* Batcher Card */}
-            <div className="w-full md:w-1/3 p-4 text-center">
-              <div className="mb-3 md:mb-8 h-auto md:h-24 flex items-center justify-center">
-                <img className="w-22 max-h-[90px] inline-block" src="/images/features/third-feature.svg" alt="Batcher" />
+            <div className="w-full md:w-1/3 p-5 text-center">
+              <div className="mb-8 h-40 flex items-center justify-center">
+                <img className="w-40 inline-block" src="/images/appimages/batcher.png" alt="Batcher" />
               </div>
-              <h3 className="font-black text-center text-white flex items-center justify-center mb-4">
-                Monadic DNA Batcher
+              <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
+                Batcher
               </h3>
-              <p className="text-white text-center mb-6">
+              <p className="text-gray-700 text-center mb-6">
                 Anonymously commit to getting genotyped. When enough users join a batch, get affordable sequencing with complete privacy using only kit IDs.
               </p>
               <div className="flex flex-col gap-2 items-center">
                 <Link
                   href="/batcher"
-                  className="inline-block bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors font-medium text-sm md:text-base"
+                  className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm md:text-base"
                 >
                   Learn More
                 </Link>
-                <span className="text-sm text-gray-400">(Coming Soon)</span>
+                <span className="text-sm text-gray-500">(Coming Soon)</span>
               </div>
             </div>
           </div>

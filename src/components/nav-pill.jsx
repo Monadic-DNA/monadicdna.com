@@ -49,7 +49,8 @@ const NavPill = () => {
                 </svg>
               </button>
               {isAppsOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[200px]">
+                <div className="absolute top-full left-0 pt-2">
+                  <div className="bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[200px]">
                   <Link href="https://explorer.monadicdna.com/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-base text-black hover:bg-gray-100">
                     Monadic DNA Explorer
                   </Link>
@@ -59,6 +60,7 @@ const NavPill = () => {
                   <Link href="/batcher" className="block px-4 py-2 text-base text-black hover:bg-gray-100">
                     Monadic DNA Batcher
                   </Link>
+                  </div>
                 </div>
               )}
             </div>
