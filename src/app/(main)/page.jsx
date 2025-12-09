@@ -10,29 +10,29 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <main className="px-6 pt-24 md:pt-8 lg:px-8 relative overflow-hidden">
+      <main className="px-6 pt-24 md:pt-8 pb-8 md:pb-12 lg:px-8 relative overflow-hidden bg-black">
         {/* Animated Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30 bg-[length:200%_200%] animate-gradient-shift -z-10" />
 
         <div className="mx-auto max-w-5xl text-center relative">
           {/* Main Heading */}
-          <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight">
+          <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight text-white">
             Privacy-First Genomics Platform
           </h1>
 
           {/* Subheading */}
-          <p className="hidden md:block md:mb-8 text-balance mb-6 max-w-5xl sm:text-xl text-base leading-relaxed text-black">
+          <p className="hidden md:block md:mb-8 text-balance mb-6 max-w-5xl sm:text-xl text-base leading-relaxed text-white">
             Unlock the power of your DNA with complete privacy and control. Explore genetic insights, securely store your data, and access cutting-edge genomics tools—all built with advanced encryption and blind computation technology.
           </p>
 
-          <p className="block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:text-base leading-relaxed text-[#232323]">
+          <p className="block md:hidden mb-3 text-balance max-w-5xl sm:text-xl text-sm md:text-base leading-relaxed text-white">
             Unlock your DNA insights with complete privacy and control through our suite of genomics tools.
           </p>
         </div>
       </main>
 
       {/* Products Section */}
-      <section className="relative bg-white py-16 md:py-20 z-20 mt-8 md:mt-12">
+      <section className="relative bg-white py-16 md:py-20 z-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-black text-black text-center mb-16">Our Products</h2>
 
