@@ -13,15 +13,6 @@ const NavbarDesktop = () => {
           <img className="h-14 w-auto" src="/images/logo.png" alt="Monadic DNA - Privacy-first genomics platform" />
         </Link>
         <div className="flex items-center gap-8">
-          <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-            About
-          </Link>
-          <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-            FAQ
-          </Link>
-          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-            Blog
-          </Link>
           <div className="relative" onMouseEnter={() => setIsAppsOpen(true)} onMouseLeave={() => setIsAppsOpen(false)}>
             <button className="text-[15px] leading-6 text-[#344054] hover:text-black flex items-center gap-1">
               Apps
@@ -30,16 +21,27 @@ const NavbarDesktop = () => {
               </svg>
             </button>
             {isAppsOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[160px]">
+              <div className="absolute top-full left-0 pt-2 z-50">
+                <div className="bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[160px]">
                 <Link href="https://explorer.monadicdna.com/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100">
                   Explorer
                 </Link>
-                <Link href="https://monadicdna.com/" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100">
+                <Link href="/vault" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100">
                   Vault
                 </Link>
+                <Link href="/batcher" className="block px-4 py-2 text-[15px] text-[#344054] hover:bg-gray-100">
+                  Batcher
+                </Link>
+                </div>
               </div>
             )}
           </div>
+          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            Blog
+          </Link>
+          <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            FAQ
+          </Link>
         </div>
       </div>
     </nav>
