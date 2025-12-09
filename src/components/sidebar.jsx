@@ -14,22 +14,6 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           </button>
         </div>
         <div className="flex flex-col gap-4 gap-y-3 p-5">
-          <Link href="/#about" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
-            toggleSidebar();
-          }}>
-            About
-          </Link>
-          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
-            toggleSidebar();
-          }}>
-            Blog
-          </Link>
-          <Link href="/faq" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
-            toggleSidebar();
-          }}>
-            FAQ
-          </Link>
-          <div className="border-t border-gray-200 my-2"></div>
           <div className="text-sm font-bold text-gray-500 px-3 py-1">APPS</div>
           <Link href="https://explorer.monadicdna.com/" target="_blank" rel="noopener noreferrer" className="text-lg p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
             toggleSidebar();
@@ -47,15 +31,21 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             Monadic DNA Batcher
           </Link>
           <div className="border-t border-gray-200 my-2"></div>
+          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            Blog
+          </Link>
+          <Link href="/faq" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
+            toggleSidebar();
+          }}>
+            FAQ
+          </Link>
+          <div className="border-t border-gray-200 my-2"></div>
           <Link href="/press" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
             toggleSidebar();
           }}>
             Press
-          </Link>
-          <Link href="/lightpaper" className="text-xl p-3 font-medium font-unbounded leading-6 text-darkMain hover:text-black" onClick={() => {
-            toggleSidebar();
-          }}>
-            Lightpaper
           </Link>
         </div>
       </div>

@@ -16,9 +16,6 @@ export default function Footer() {
             />
           </Link>
           <div className="flex flex-col text-[16px] space-y-4">
-            <Link href="/#about" className="text-white hover:text-gray-300">
-              About
-            </Link>
             <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
               Blog
             </Link>
@@ -28,17 +25,8 @@ export default function Footer() {
             <Link href="/press" className="text-white hover:text-gray-300">
               Press
             </Link>
-            <Link href="/lightpaper" className="text-white hover:text-gray-300">
-              Lightpaper
-            </Link>
             <Link href="/guide" className="text-white hover:text-gray-300">
               Step-by-Step Guide
-            </Link>
-            <Link href="/terms" className="text-white hover:text-gray-300">
-              Terms of Service
-            </Link>
-            <Link href="/privacy" className="text-white hover:text-gray-300">
-              Privacy Policy
             </Link>
           </div>
           <div className="flex my-8 gap-4">
@@ -290,9 +278,6 @@ export default function Footer() {
             {/* Right Section */}
             <div className="grid grid-cols-2 gap-x-16 gap-y-4">
               <div className="space-y-4">
-                <Link href="/#about" className="block hover:text-gray-300">
-                  About
-                </Link>
                 <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300">
                   Blog
                 </Link>
@@ -301,9 +286,6 @@ export default function Footer() {
                 </Link>
                 <Link href="/press" className="block hover:text-gray-300">
                   Press
-                </Link>
-                <Link href="/lightpaper" className="block hover:text-gray-300">
-                  Lightpaper
                 </Link>
                 <Link href="/guide" className="block hover:text-gray-300">
                   Step-by-Step Guide
@@ -315,14 +297,6 @@ export default function Footer() {
           {/* Bottom Section */}
           <div className="mt-8 pt-4 fon border-white/10 flex justify-start gap-x-6 items-center">
             <p className="text-base">© 2025 <a href="https://recherche.tech/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">Recherché Inc</a></p>
-            <div className="flex gap-6">
-              <Link href="/terms" className="hover:text-gray-300">
-                Terms of Service
-              </Link>
-              <Link href="/privacy" className="hover:text-gray-300">
-                Privacy Policy
-              </Link>
-            </div>
           </div>
         </div>
       </div>

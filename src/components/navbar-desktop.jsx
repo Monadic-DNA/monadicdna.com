@@ -13,15 +13,6 @@ const NavbarDesktop = () => {
           <img className="h-14 w-auto" src="/images/logo.png" alt="Monadic DNA - Privacy-first genomics platform" />
         </Link>
         <div className="flex items-center gap-8">
-          <Link href="/#about" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-            About
-          </Link>
-          <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-            FAQ
-          </Link>
-          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-[15px] leading-6 text-[#344054] hover:text-black">
-            Blog
-          </Link>
           <div className="relative" onMouseEnter={() => setIsAppsOpen(true)} onMouseLeave={() => setIsAppsOpen(false)}>
             <button className="text-[15px] leading-6 text-[#344054] hover:text-black flex items-center gap-1">
               Apps
@@ -42,6 +33,12 @@ const NavbarDesktop = () => {
               </div>
             )}
           </div>
+          <Link href="https://blog.monadicdna.com" target="_blank" rel="noopener noreferrer" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            Blog
+          </Link>
+          <Link href="/faq" className="text-[15px] leading-6 text-[#344054] hover:text-black">
+            FAQ
+          </Link>
         </div>
       </div>
     </nav>
