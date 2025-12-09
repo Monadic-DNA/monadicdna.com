@@ -2,15 +2,24 @@ export default function BatcherPage() {
   return (
     <div className="font-inter">
       {/* Hero Section */}
-      <main className="px-6 pt-24 md:pt-8 lg:px-8 pb-12">
+      <main className="px-6 pt-12 md:pt-16 lg:px-8 pb-12">
         <div className="mx-auto max-w-5xl text-center">
+          {/* App Image */}
+          <div className="mb-6 flex justify-center">
+            <img
+              src="/images/appimages/batcher.png"
+              alt="Monadic DNA Batcher"
+              className="w-40 h-40 md:w-56 md:h-56 object-contain"
+            />
+          </div>
+
           {/* Main Heading */}
-          <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight">
+          <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl text-balance font-darkMain font-black leading-tight tracking-tight">
             Monadic DNA Batcher
           </h1>
 
           {/* Subheading */}
-          <p className="hidden md:block md:mb-8 text-balance mb-6 max-w-5xl sm:text-xl text-base leading-relaxed text-black">
+          <p className="hidden md:block md:mb-6 text-balance mb-4 max-w-5xl sm:text-xl text-base leading-relaxed text-black">
             Anonymous, affordable genotyping through collective action. Join a batch, maintain your privacy, and get sequenced when your group is ready.
           </p>
 
@@ -18,8 +27,19 @@ export default function BatcherPage() {
             Anonymous, affordable genotyping through collective action.
           </p>
 
-          <div className="mt-8 inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 px-6 py-3 rounded-lg font-medium">
+          <div className="mt-6 inline-block bg-yellow-100 border border-yellow-400 text-yellow-800 px-6 py-3 rounded-lg font-medium">
             Coming Soon
+          </div>
+
+          <div className="mt-4 mb-8">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdHFDpsyU0t6PlaXEkbHX-pwF_y7icuPJeOHyGHMDpe11XigQ/viewform?usp=sharing&ouid=117844628488835974298"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#1A1A1A] text-white font-bold px-8 py-3 rounded-lg hover:bg-black transition-colors"
+            >
+              Pre-Register Your Interest
+            </a>
           </div>
         </div>
       </main>
