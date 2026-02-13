@@ -40,7 +40,7 @@ export default function Home() {
             {/* Explorer Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
               <div className="mb-8 h-40 flex items-center justify-center">
-                <img className="w-44 inline-block" src="/images/appimages/explorer.png" alt="Explorer" />
+                <img className="w-32 h-32" src="/images/appicons/icon_explorer.svg" alt="Explorer" />
               </div>
               <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
                 Explorer
@@ -61,7 +61,7 @@ export default function Home() {
             {/* Vault Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
               <div className="mb-8 h-40 flex items-center justify-center">
-                <img className="w-40 inline-block" src="/images/blind-computation.svg" alt="Vault" />
+                <img className="w-32 h-32" src="/images/appicons/icon_vault.svg" alt="Vault" />
               </div>
               <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
                 Vault
@@ -83,7 +83,7 @@ export default function Home() {
             {/* Batcher Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
               <div className="mb-8 h-40 flex items-center justify-center">
-                <img className="w-40 inline-block" src="/images/appimages/batcher.png" alt="Batcher" />
+                <img className="w-32 h-32" src="/images/appicons/icon_batcher.svg" alt="Batcher" />
               </div>
               <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
                 Batcher
