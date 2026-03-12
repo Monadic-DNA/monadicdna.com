@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
             {/* Explorer Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
               <div className="mb-8 h-40 flex items-center justify-center">
-                <img className="w-32 h-32" src="/images/appicons/icon_explorer.svg" alt="Explorer" />
+                <Image className="w-32 h-32" src="/images/appicons/icon_explorer.svg" alt="Explorer" width={128} height={128} />
               </div>
               <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
                 Explorer
@@ -61,7 +62,7 @@ export default function Home() {
             {/* Vault Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
               <div className="mb-8 h-40 flex items-center justify-center">
-                <img className="w-32 h-32" src="/images/appicons/icon_vault.svg" alt="Vault" />
+                <Image className="w-32 h-32" src="/images/appicons/icon_vault.svg" alt="Vault" width={128} height={128} />
               </div>
               <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
                 Vault
@@ -83,7 +84,7 @@ export default function Home() {
             {/* Batcher Card */}
             <div className="w-full md:w-1/3 p-5 text-center">
               <div className="mb-8 h-40 flex items-center justify-center">
-                <img className="w-32 h-32" src="/images/appicons/icon_batcher.svg" alt="Batcher" />
+                <Image className="w-32 h-32" src="/images/appicons/icon_batcher.svg" alt="Batcher" width={128} height={128} />
               </div>
               <h3 className="font-black text-center text-black flex items-center justify-center mb-4">
                 Batcher
